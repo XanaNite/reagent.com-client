@@ -1,0 +1,29 @@
+.sectionBorders{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+}
+
+.accountSettings-nav h1{
+    margin: 0;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.accountSettings-profileUser{
+    display: flex;
+    padding-top: 10px;
+}
+
+.accountSettings-profileUser img{
+    width: 75px;
+}
+
+.accountSettings-profileUser h2{
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+.accountSettings-update form{
+    padding-left: 10px;
+}

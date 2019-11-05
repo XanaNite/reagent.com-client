@@ -1,0 +1,45 @@
+.presentedBy{
+    display: flex;
+}
+
+.presentedBy p{
+    margin: 5px;
+}
+
+.listing-container{
+    position: relative;
+}
+
+.listing-images img{
+    width: 100%;
+}
+
+.imagesCount{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: white;
+    background-color: black;
+    opacity: 0.6;
+    padding: 0px 5px 2px 5px;
+    font-size: 12px;
+}
+
+.address h2{
+    margin-bottom: 0;
+}
+
+.address p{
+    margin: 0px;
+    padding: 10px;
+}
+
+.listingAddress-details table{
+    width: 100%;
+}
+
+.listingAddress-details td{
+    width: 50%;
+    text-align: left;
+}
+

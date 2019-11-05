@@ -1,0 +1,80 @@
+.dashboardMain-section{
+    margin: 50px 10px 10px 10px;
+    border-radius: 2px;
+    background-color: whitesmoke;
+}
+
+.dashboardAgent-section{
+    width: 340px;
+}
+
+.container{
+    padding: 15px;
+}
+
+.dashboardAgent-agentInfo{
+    margin-bottom: 100px;
+}
+
+.dashboardAgent-profile{
+    display: flex;
+}
+
+.dashboardAgent-profile img{
+    width: 100px;
+}
+
+.dashboardAgent-name{
+    height: 100px;
+    padding-left: 15px;
+}
+
+.dashboardAgent-name h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.dashboardAgent-name p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dashboardAgent-contact table{
+    margin-top: 25px;
+    width: 100%;
+}
+
+.tableStyle{
+    font-weight: 500;
+}
+
+.dashboardListing-listingInfo{
+    margin-bottom: 100px;
+}
+
+.dashboardListing-none{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.dashboardListing-none h3{
+    font-weight: 500;
+}
+
+/*@media screen and (min-width: 490px){
+    main{
+        display: flex;
+    }
+    section{
+        width: 50%;
+    }
+}*/
+
+@media screen and (min-width: 1050px){
+    .dashboardMain{
+        display: flex;
+        padding: 0px 150px 0px 150px;
+    }
+}

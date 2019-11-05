@@ -1,0 +1,71 @@
+.listingsListPage-section{
+    background-color: whitesmoke;
+}
+
+.listingsListPage-heading{
+    padding: 5px 10px;
+    border-radius: 2px;
+    background-color: lightgray;
+
+}
+
+.listingsListPage-navBar{
+    margin: 15px 0px;
+    display: flex;
+    border-bottom: 1px solid gray;
+    font-size: 12px;
+}
+
+.active{
+    border-top: 2px solid blue;
+    color: blue;
+    font-weight: bold;
+}
+
+.notActive{
+    border-top: 1px solid gray;
+}
+
+.listingNavBar{
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 10px;
+    margin-right: 5px;
+    background: white;
+}
+
+.wrapper{
+    margin: 10px;
+    padding: 15px;
+    border-radius: 3px;
+    background: white;
+}
+
+.listingsMain-noListings{
+    text-align: center;
+}
+
+.listingsMain-noListings img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.listingsMain-turnPage{
+    text-align: center;
+}
+
+.listingsMain-activeListings p{
+    margin: 5px 0px;
+}
+
+.activeListing-details{
+    margin-top: 25px;
+}
+
+.listingsMain-turnPage{
+    margin-top: 40px;
+}
