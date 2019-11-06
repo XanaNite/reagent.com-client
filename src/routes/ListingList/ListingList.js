@@ -3,48 +3,48 @@ import './ListingList.css'
 
 export default function ListingList(){
     return(
-        <section class="listingsListPage-section">
-            <div class="listingsListPage-container container">
-                <div class="listingsListPage-heading">
+        <section className="listingsListPage-section">
+            <div className="listingsListPage-container container">
+                <div className="listingsListPage-heading">
                     <h2>Listings</h2>
                 </div>
-                <div class="listingsListPage-navBar">
-                    <div class="listingNavBar active">
+                <div className="listingsListPage-navBar">
+                    <div className="listingNavBar active">
                         FOR SALE
                     </div>
-                    <div class="listingNavBar notActive">
+                    <div className="listingNavBar notActive">
                         FOR RENT
                     </div>
-                    <div class="listingNavBar notActive">
+                    <div className="listingNavBar notActive">
                         SOLDS
                     </div>
                 </div>
-                <div class="listingsListPage-main">
-                    <div class="listingsMain-noListings wrapper">
+                <div className="listingsListPage-main">
+                    <div className="listingsMain-noListings wrapper">
                         <img src="../images/placeholderHome.jpg" alt="No listings image" />
                         <h3>No Properties have been found yet.</h3>
                         <p>When your listings are available, we will display them here</p>
                     </div>
-                    <div class="listingsMain-activeListings wrapper">
+                    <div className="listingsMain-activeListings wrapper">
                         <a href="listingInfo.html"><img src="../images/placeholderHome.jpg" alt="House image" /></a>
-                        <div class="activeListing-address">
+                        <div className="activeListing-address">
                             <a href="listingInfo.html">[[STREET ADDRESS]]</a>
                             <p>[[CITY, STATE]]</p>
                             <p>[[ZIP CODE]]</p>
                         </div>
-                        <div class="activeListing-price activeListing-details">
+                        <div className="activeListing-price activeListing-details">
                             <p>Price</p>
                             <p>[[#]]</p>
                         </div>
-                        <div class="activeListing-mls activeListing-details">
+                        <div className="activeListing-mls activeListing-details">
                             <p>MLS</p>
                             <p>[[MLS NAME]]</p>
                             <p>[[#]]</p>
                         </div>
-                        <div class="listingsMain-turnPage">
-                            <i class="fa fa-angle-double-left"></i>
-                            <span class="turnPage-number">1</span>
-                            <i class="fa fa-angle-double-right"></i>
+                        <div className="listingsMain-turnPage">
+                            <i className="fa fa-angle-double-left"></i>
+                            <span className="turnPage-number">1</span>
+                            <i className="fa fa-angle-double-right"></i>
                         </div>
                     </div>
                 </div>

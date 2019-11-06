@@ -5,37 +5,37 @@ export default function AccountSettings(){
     return(
         <>
         <section>
-            <div class="accountSettings-profileUser sectionBorders">
+            <div className="accountSettings-profileUser sectionBorders">
                 <img src="../images/placeholderProfile.png" alt="Agent profile image" />
-                <div class="accountSettings-name">
+                <div className="accountSettings-name">
                     <h2>[[AGENT NAME]]</h2>
                 </div>
             </div>
         </section>
         <section>
-            <div class="accountSettings-update">
-                <div class="updateEmail-container sectionBorders">
-                    <form class="updateEmail-form">
+            <div className="accountSettings-update">
+                <div className="updateEmail-container sectionBorders">
+                    <form className="updateEmail-form">
                         <h3>Update Email</h3>
-                        <div class="newEmail-container">
+                        <div className="newEmail-container">
                             <label for="newEmail">Add new email</label>
                             <input type="text" name="newEmail" id="newEmail" />
                         </div>
                         <button type="submit">Update</button>
                     </form>
                 </div>
-                <div class="updatePassword-container sectionBorders">
-                    <form class="updatePassword-form">
+                <div className="updatePassword-container sectionBorders">
+                    <form className="updatePassword-form">
                         <h3>Update Password</h3>
-                        <div class="oldPassword-container">
+                        <div className="oldPassword-container">
                             <label for="oldPassword">Old password</label>
                             <input type="text" name="oldPassword" id="oldPassword" />
                         </div>
-                        <div class="newPassword-container">
+                        <div className="newPassword-container">
                             <label for="newPassword">New password</label>
                             <input type="text" name="newPassword" id="newPassword" />
                         </div>
-                        <div class="confirmPassword-container">
+                        <div className="confirmPassword-container">
                             <label for="confirmPassword">Confirm password</label>
                             <input type="text" name="confirmPassword" id="confirmPassword" />
                         </div>

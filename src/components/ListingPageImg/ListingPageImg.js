@@ -1,33 +1,34 @@
 import React from 'react'
+import './ListingPageImg.css'
 
 export default function ListingPageImg(){
     return(
-        <section class="listing-about detailedBorder">
-            <div class="presentedBy">
+        <section className="listing-about detailedBorder">
+            <div className="presentedBy">
                 <p>Presented by:</p>
                 <p>[[AGENT]] with [[OFFICE]]</p>
             </div>
-            <div class="listing-images">
-                <div class="listing-container">
+            <div className="listing-images">
+                <div className="listing-container">
                     <img src={window.location.origin + "/images/placeholderHome.jpg"} alt="House" />
-                    <div class="imagesCount">
+                    <div className="imagesCount">
                         <span>1/20</span>
                     </div>
                 </div>
             </div>
-            <div class="propertyAddress-details listingPage-details">
-                <div class="address">
-                    <h2 class="detailedBorder">[[COST]]</h2>
-                    <div class="listing-info detailedBorder flexbox-around">
+            <div className="propertyAddress-details listingPage-details">
+                <div className="address">
+                    <h2 className="detailedBorder">[[COST]]</h2>
+                    <div className="listing-info detailedBorder flexbox-around">
                         <p>bed</p>
                         <p>bath</p>
                         <p>sq ft</p>
                         <p>sq ft lot</p>
                     </div>
-                    <p class="listingAddress detailedBorder">address</p>
+                    <p className="listingAddress detailedBorder">address</p>
                 </div>
             </div>
-            <div class="listingAddress-details">
+            <div className="listingAddress-details">
                 <table>
                     <tr>
                         <td>Property Type</td>

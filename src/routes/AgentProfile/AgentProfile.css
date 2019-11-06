@@ -1,7 +1,7 @@
 .profileBanner{
     width: 100%;
     height: 250px;
-    background: rgb(238, 214, 163) url("images/placeholderBackground.jpg") no-repeat center;
+    background: rgb(238, 214, 163) url("../../images/placeholderBackground.jpg") no-repeat center;
     background-size: contain;
     display: flex;
     justify-content: center;
@@ -16,6 +16,10 @@
 
 .profileBanner-name{
     padding-bottom: 100px;
+}
+
+.profileBanner-name h2{
+    margin-bottom: 10px;
 }
 
 .checked {

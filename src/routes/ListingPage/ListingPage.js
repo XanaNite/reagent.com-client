@@ -6,22 +6,22 @@ export default function ListingPage(){
     return(
         <>
         <ListingPageImg />
-        <div class="listingPage-details">
-            <section class="listing-openHouses detailedBorder">
+        <div className="listingPage-details">
+            <section className="listing-openHouses detailedBorder">
                 <h3>Open Houses</h3>
                 <p>Contact agent for a private showing.</p>
             </section>
-            <section class="listing-propertyDetails detailedBorder">
+            <section className="listing-propertyDetails detailedBorder">
                 <h3>Property Details</h3>
-                <p class="propertyOverview">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-                <div class="propertyFeatures">
-                    <div class="listing-bedrooms detailedBorder">
+                <p className="propertyOverview">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                <div className="propertyFeatures">
+                    <div className="listing-bedrooms detailedBorder">
                         <h4>Bedrooms</h4>
                         <ul>
                             <li>Bedrooms: [[#]]</li>
                         </ul>
                     </div>
-                    <div class="listing-bathrooms detailedBorder">
+                    <div className="listing-bathrooms detailedBorder">
                         <h4>Bathrooms</h4>
                         <ul>
                             <li>Total Bathrooms: [[#]]</li>
@@ -29,13 +29,13 @@ export default function ListingPage(){
                             <li>1/2 Bathrooms: [[#]]</li>
                         </ul>
                     </div>
-                    <div class="listing-appliances detailedBorder">
+                    <div className="listing-appliances detailedBorder">
                         <h4>Appliances</h4>
                         <ul>
                             <li>Laundry Facilities: [[INFO]]</li>
                         </ul>
                     </div>
-                    <div class="listing-kitchenDining detailedBorder">
+                    <div className="listing-kitchenDining detailedBorder">
                         <h4>Kitchen and Dining</h4>
                         <ul>
                             <li>Disposal</li>
@@ -45,7 +45,7 @@ export default function ListingPage(){
                             <li>Cook Top Elec</li>
                         </ul>
                     </div>
-                    <div class="listing-heatingCooling detailedBorder">
+                    <div className="listing-heatingCooling detailedBorder">
                         <h4>Heating and Cooling</h4>
                         <ul>
                             <li>Cooling Features: [[INFO]]</li>
@@ -53,28 +53,28 @@ export default function ListingPage(){
                             <li>Number of Fireplaces: [[#]]</li>
                         </ul>
                     </div>
-                    <div class="listing-exteriorLot detailedBorder">
+                    <div className="listing-exteriorLot detailedBorder">
                         <h4>Exterior and Lot Features</h4>
                         <ul>
                             <li>Fencing: [[INFO]]</li>
                             <li>Lot Size Square Feet: [[#]]</li>
                         </ul>
                     </div>
-                    <div class="listing-land detailedBorder">
+                    <div className="listing-land detailedBorder">
                         <h4>Land Info</h4>
                         <ul>
                             <li>Landscaping: [[INFO]]</li>
                             <li>Lot Size Acres: [[#]]</li>
                         </ul>
                     </div>
-                    <div class="listing-garageParking detailedBorder">
+                    <div className="listing-garageParking detailedBorder">
                         <h4>Garage and Parking</h4>
                         <ul>
                             <li>Parking Features: [[INFO]]</li>
                             <li>Spaces: [[#]]</li>
                         </ul>
                     </div>
-                    <div class="listing-hoa detailedBorder">
+                    <div className="listing-hoa detailedBorder">
                         <h4>Homeowners Association</h4>
                         <ul>
                             <li>Association: [[INFO]]</li>
@@ -82,7 +82,7 @@ export default function ListingPage(){
                             <li>Calculated Total Monthly Association Fees: [[#]]</li>
                         </ul>
                     </div>
-                    <div class="listing-schoolInfo detailedBorder">
+                    <div className="listing-schoolInfo detailedBorder">
                         <h4>School Information</h4>
                         <ul>
                             <li>Elementary School: [[INFO]]</li>
@@ -93,7 +93,7 @@ export default function ListingPage(){
                             <li>Middle School District: [[INFO]]</li>
                         </ul>
                     </div>
-                    <div class="listing-other detailedBorder">
+                    <div className="listing-other detailedBorder">
                         <h4>Other Property Info</h4>
                         <ul>
                             <li>Annual Tax Amount: [[#]]</li>
@@ -110,7 +110,7 @@ export default function ListingPage(){
                             <li>Source System Name: C2C</li>
                         </ul>
                     </div>
-                    <div class="listing-buildingConstruction detailedBorder">
+                    <div className="listing-buildingConstruction detailedBorder">
                         <h4>Building and Construction</h4>
                         <ul>
                             <li>Square Feet Living: [[#]]</li>
@@ -127,7 +127,7 @@ export default function ListingPage(){
                             <li>Architectural Style: [[INFO]]</li>
                         </ul>
                     </div>
-                    <div class="listing-utilities">
+                    <div className="listing-utilities">
                         <h4>Utilities</h4>
                         <ul>
                             <li>Sewer: [[INFO]]</li>
@@ -137,15 +137,15 @@ export default function ListingPage(){
                     </div>
                 </div>
             </section>
-            <section class="listing-paymentCalculator detailedBorder">
+            <section className="listing-paymentCalculator detailedBorder">
                 <h3>Payment Calculator</h3>
-                <div class="paymentCalculator-img">
+                <div className="paymentCalculator-img">
                     <img src={window.location.origin + "/images/paymentCalculator.jpg"} alt="payment calculator" />
                 </div>
             </section>
-            <section class="listing-propertyHistory detailedBorder">
+            <section className="listing-propertyHistory detailedBorder">
                 <h3>Property History</h3>
-                <div class="listing-price">
+                <div className="listing-price">
                     <h4>Property Price</h4>
                     <table>
                         <thead>
@@ -174,7 +174,7 @@ export default function ListingPage(){
                         </tbody>
                     </table>
                 </div>
-                <div class="listing-tax">
+                <div className="listing-tax">
                     <h4>Property Tax</h4>
                     <table>
                         <thead>
@@ -204,9 +204,9 @@ export default function ListingPage(){
                     </table>
                 </div>
             </section>
-            <section class="listing-nearbySchools detailedBorder">
+            <section className="listing-nearbySchools detailedBorder">
                 <h3>Nearby Schools</h3>
-                <div class="listing-schoolRatings">
+                <div className="listing-schoolRatings">
                     <table>
                         <thead>
                             <tr>
@@ -231,21 +231,21 @@ export default function ListingPage(){
                     </table>
                 </div>
             </section>
-            <section class="listing-neighborhood detailedBorder">
+            <section className="listing-neighborhood detailedBorder">
                 <h3>Neighborhood</h3>
                 <p>[[ADDRESS]] is located in [[NEIGHBORHOOD]] in the city of [[LOCATION]]</p>
                 <p>Checkout other home values on [[STREET]]</p>
-                <div class="neighborhood-details">
-                    <ul class="neighborhoodMedian flexbox-between">
-                        <li class="dottedBorder">
+                <div className="neighborhood-details">
+                    <ul className="neighborhoodMedian flexbox-between">
+                        <li className="dottedBorder">
                             [[#]]
                             <span>Median Listing Price</span>
                         </li>
-                        <li class="dottedBorder-tablet">
+                        <li className="dottedBorder-tablet">
                             [[#]]
                             <span>Median Sales Price</span>
                         </li>
-                        <li class="dottedBorder">
+                        <li className="dottedBorder">
                             [[#]]
                             <span>Median Days on Market</span>
                         </li>
@@ -254,18 +254,18 @@ export default function ListingPage(){
                             <span>Price Per Sq Ft</span>
                         </li>
                     </ul>
-                    <div class="nearbyNeighborhoods">
+                    <div className="nearbyNeighborhoods">
                         <h4>Nearby Neighborhoods in [[LOCATION]]</h4>
-                        <ul class="flexbox-between">
-                            <li class="dottedBorder">
+                        <ul className="flexbox-between">
+                            <li className="dottedBorder">
                                 [[NEIGHBORHOOD]]
                                 <span>Median Listing: [[#]]</span>
                             </li>
-                            <li class="dottedBorder-tablet">
+                            <li className="dottedBorder-tablet">
                                 [[NEIGHBORHOOD]]
                                 <span>Median Listing: [[#]]</span>
                             </li>
-                            <li class="dottedBorder">
+                            <li className="dottedBorder">
                                 [[NEIGHBORHOOD]]
                                 <span>Median Listing: [[#]]</span>
                             </li>
@@ -277,32 +277,32 @@ export default function ListingPage(){
                     </div>
                 </div>
             </section>
-            <section class="listing-agentInfo">
-                <div class="agent-info">
-                    <div class="agent detailedBorder">
+            <section className="listing-agentInfo">
+                <div className="agent-info">
+                    <div className="agent detailedBorder">
                         <p>Presented by:</p>
                         <p><a href="agentProfile.html">[[AGENT]]</a></p>
                     </div>
-                    <div class="brokerage detailedBorder">
+                    <div className="brokerage detailedBorder">
                         <p>Brokered by:</p>
                         <p>[[OFFICE]]</p>
                         <p>[[#]]</p>
                     </div>
                 </div>
-                <div class="listingInfo">
-                    <ul class="brokerLocation detailedBorder flexbox-between">
+                <div className="listingInfo">
+                    <ul className="brokerLocation detailedBorder flexbox-between">
                         <li>Broker Location:</li>
                         <li>[[LOCATION]]</li>
                     </ul>
-                    <ul class="dataSource detailedBorder flexbox-between">
+                    <ul className="dataSource detailedBorder flexbox-between">
                         <li>Data Source:</li>
                         <li>[[SOURCE]]</li>
                     </ul>
-                    <ul class="propertyId detailedBorder flexbox-between">
+                    <ul className="propertyId detailedBorder flexbox-between">
                         <li>Source's Property ID:</li>
                         <li>[[#]]</li>
                     </ul>
-                    <ul class="copyright flexbox-between">
+                    <ul className="copyright flexbox-between">
                         <li>Data Source Copyright:</li>
                         <li>[[INFO]]</li>
                     </ul>

@@ -4,24 +4,24 @@ import './AgentDashboard.css'
 export default function AgentDashboard(){
     return(
         <>
-        <section class="dashboardAgent-section dashboardMain-section">
-            <div class="container">
-                <div class="dashboardAgent-agentInfo">
-                    <div class="dashboardAgent-profile">
+        <section className="dashboardAgent-section dashboardMain-section">
+            <div className="container">
+                <div className="dashboardAgent-agentInfo">
+                    <div className="dashboardAgent-profile">
                         <img src="../images/placeholderProfile.png" alt="Agent profile image" />
-                        <div class="dashboardAgent-name">
+                        <div className="dashboardAgent-name">
                             <h2>[[AGENT NAME]]</h2>
                             <p>Enter your slogan</p>
                         </div>
                     </div>
-                    <div class="dashboardAgent-contact">
+                    <div className="dashboardAgent-contact">
                         <table>
                             <tr>
-                                <td class="tableStyle">Email</td>
+                                <td className="tableStyle">Email</td>
                                 <td>[[EMAIL]]</td>
                             </tr>
                             <tr>
-                                <td class="tableStyle">Phone</td>
+                                <td className="tableStyle">Phone</td>
                                 <td>[[TYPE]] [[#]]</td>
                             </tr>
                         </table>
@@ -30,16 +30,16 @@ export default function AgentDashboard(){
                 <a href="profileForm.html">Improve your profile</a>
             </div>
         </section>
-        <section class="dashboardListing-section dashboardMain-section">
-            <div class="container">
-                <div class="dashboardListing-listingInfo">
+        <section className="dashboardListing-section dashboardMain-section">
+            <div className="container">
+                <div className="dashboardListing-listingInfo">
                     <h2>Your new listings in the last 30 days</h2>
-                    <div class="dashboardListing-new">
-                        <div class="dashboardListing-none">
+                    <div className="dashboardListing-new">
+                        <div className="dashboardListing-none">
                             <h3>Looks like you haven't had any listings or rentals in the last 30 days</h3>
                             <p>If you MLS data is not appearing as expected contact Customer Care so we can help you connect your MLS.</p>
                         </div>
-                        <div class="dashboardListing-info hidden"></div>
+                        <div className="dashboardListing-info hidden"></div>
                     </div>
                 </div>
                 <a href="listingList.html">Manage your listings</a>
