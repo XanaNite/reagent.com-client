@@ -10,12 +10,11 @@ import DATA from '../../ratingsData'
 
 class App extends React.Component{
   render(){
-    const agent = DATA.agent
+    //const agent = DATA.agent
 
     return (
       <div className='App'>
-        <Header />
-        <AgentProfile agent={agent} />
+        <LoginPage />
       </div>
     );
   }

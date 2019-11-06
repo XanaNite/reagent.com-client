@@ -3,11 +3,13 @@ import Rating from '../../components/Rating/Rating'
 import ClientRatingList from '../../components/ClientRatingList/ClientRatingList'
 import ClientRecommendList from '../../components/ClientRecommendList/ClientRecommendList'
 import AgentListingsList from '../../components/AgentListingsList/AgentListingsList'
+import Header from '../../components/Header/Header';
 import './AgentProfile.css'
 
 export default function AgentProfile(props){
     return(
         <>
+        <Header />
         <section className="agentProfile-section">
             <div className="profileBanner">
                 <img src={window.location.origin + "/images/placeholderProfile.png"} alt="Profile" />

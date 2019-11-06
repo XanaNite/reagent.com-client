@@ -18,7 +18,7 @@ export default function AccountSettings(){
                     <form className="updateEmail-form">
                         <h3>Update Email</h3>
                         <div className="newEmail-container">
-                            <label for="newEmail">Add new email</label>
+                            <label htmlFor="newEmail">Add new email</label>
                             <input type="text" name="newEmail" id="newEmail" />
                         </div>
                         <button type="submit">Update</button>
@@ -28,15 +28,15 @@ export default function AccountSettings(){
                     <form className="updatePassword-form">
                         <h3>Update Password</h3>
                         <div className="oldPassword-container">
-                            <label for="oldPassword">Old password</label>
+                            <label htmlFor="oldPassword">Old password</label>
                             <input type="text" name="oldPassword" id="oldPassword" />
                         </div>
                         <div className="newPassword-container">
-                            <label for="newPassword">New password</label>
+                            <label htmlFor="newPassword">New password</label>
                             <input type="text" name="newPassword" id="newPassword" />
                         </div>
                         <div className="confirmPassword-container">
-                            <label for="confirmPassword">Confirm password</label>
+                            <label htmlFor="confirmPassword">Confirm password</label>
                             <input type="text" name="confirmPassword" id="confirmPassword" />
                         </div>
                         <button type="submit">Update</button>

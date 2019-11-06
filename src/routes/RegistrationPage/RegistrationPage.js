@@ -14,31 +14,31 @@ export default function RegistrationPage(){
                 </div>
                 <form className="signIn-form">
                     <div className="login-input">
-                        <label for="email">Email address</label>
+                        <label htmlFor="email">Email address</label>
                         <div>
                             <input type="text" name="email" id="email" />
                         </div>
                     </div>
                     <div className="login-input">
-                        <label for="emailConfirm"> Confirm email address</label>
+                        <label htmlFor="emailConfirm"> Confirm email address</label>
                         <div>
                             <input type="text" name="emailConfirm" id="emailConfirm" />
                         </div>
                     </div>
                     <div className="login-input">
-                        <label for="password">Password</label>
+                        <label htmlFor="password">Password</label>
                         <div>
                             <input type="text" name="password" id="password" />
                         </div>
                     </div>
                     <div className="login-input">
-                        <label for="passwordConfirm">Confirm password</label>
+                        <label htmlFor="passwordConfirm">Confirm password</label>
                         <div>
                             <input type="text" name="passwordConfirm" id="passwordConfirm" />
                         </div>
                     </div>
                     <div className="login-input">
-                        <label for="phoneNumber">Phone number</label>
+                        <label htmlFor="phoneNumber">Phone number</label>
                         <div>
                             <input type="text" name="phoneNumber" id="phoneNumber" />
                         </div>

@@ -16,23 +16,23 @@ export default function EditProfile(){
                     <h3>Update Your Profile</h3>
                     <div className="editAboutMe-container">
                         <div className="newFirstName-container">
-                            <label for="newFirstName">First name</label>
+                            <label htmlFor="newFirstName">First name</label>
                             <input type="text" name="newFirstName" id="newFirstName" />
                         </div>
                         <div className="newLastName-container">
-                            <label for="newLastName">Last name</label>
+                            <label htmlFor="newLastName">Last name</label>
                             <input type="text" name="newLastName" id="newLastName" />
                         </div>
                         <div className="newSuffix-container">
-                            <label for="newSuffix">Suffix</label>
+                            <label htmlFor="newSuffix">Suffix</label>
                             <input type="text" name="newSuffix" id="newSuffix" />
                         </div>
                         <div className="newNickname-container">
-                            <label for="newNickname">Nickname</label>
+                            <label htmlFor="newNickname">Nickname</label>
                             <input type="text" name="newNickname" id="newNickname" />
                         </div>
                         <div className="newPhone-container">
-                            <label for="newPhone">Phone number</label>
+                            <label htmlFor="newPhone">Phone number</label>
                             <input type="text" name="newPhone" id="newPhone" />
                             <select name="phoneType" id="phoneType">
                                 <option value="home">Home</option>
@@ -41,43 +41,43 @@ export default function EditProfile(){
                             </select>   
                         </div>
                         <div className="newEmail-container">
-                            <label for="newEmail">Contact email address</label>
+                            <label htmlFor="newEmail">Contact email address</label>
                             <input type="text" name="newEmail" id="newEmail" />
                         </div>
                         <div className="newTitle-container">
-                            <label for="newTitle">Professional title</label>
+                            <label htmlFor="newTitle">Professional title</label>
                             <input type="text" name="newTitle" id="newTitle" />
                         </div>
                         <div className="newExperience-container">
-                            <label for="newExperience">Years of experience</label>
+                            <label htmlFor="newExperience">Years of experience</label>
                             <input type="text" name="newExperience" id="newExperience" />
                         </div>
                         <div className="newWorkWith-container">
-                            <label for="newWorkWith">Who do you work with?</label>
+                            <label htmlFor="newWorkWith">Who do you work with?</label>
                             <input type="text" name="newWorkWith" id="newWorkWith" />
                         </div>
                         <div className="newSpecialties-container">
-                            <label for="newSpecialties">Specialties</label>
+                            <label htmlFor="newSpecialties">Specialties</label>
                             <input type="text" name="newSpecialties" id="newSpecialties" />
                         </div>
                         <div className="newAreas-container">
-                            <label for="newAreas">Areas served</label>
+                            <label htmlFor="newAreas">Areas served</label>
                             <input type="text" name="newAreas" id="newAreas" />
                         </div>
                         <div className="newZip-container">
-                            <label for="newZip">Zip codes served</label>
+                            <label htmlFor="newZip">Zip codes served</label>
                             <input type="text" name="newZip" id="newZip" />
                         </div>
                         <div className="newWebsite-container">
-                            <label for="newWebsite">Website</label>
+                            <label htmlFor="newWebsite">Website</label>
                             <input type="text" name="newWebsite" id="newWebsite" />
                         </div>
                         <div className="newUrl-container">
-                            <label for="newUrl">Video URL</label>
+                            <label htmlFor="newUrl">Video URL</label>
                             <input type="text" name="newUrl" id="newUrl" />
                         </div>
                         <div className="newBio-container">
-                            <label for="newBio">Bio</label>
+                            <label htmlFor="newBio">Bio</label>
                             <input type="text" name="newBio" id="newBio" />
                         </div>
                     </div>
@@ -88,7 +88,7 @@ export default function EditProfile(){
                 <form className="updateLang-form">
                     <h4>Languages</h4>
                     <div className="newLang-container">
-                        <label for="newLang">Select Languages</label>
+                        <label htmlFor="newLang">Select Languages</label>
                         <input type="text" name="newLang" id="newLang" />
                     </div>
                     <button type="submit">Update</button>
