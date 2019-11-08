@@ -1,0 +1,16 @@
+header{
+    padding: 10px;
+}
+
+.hamburgerMenu{
+    font-size: 30px;
+}
+
+.dashboard-title h1{
+    margin: 0;
+}
+
+.profileImg-container img{
+    width: 30px;
+    margin: 5px;
+}

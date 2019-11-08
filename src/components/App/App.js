@@ -7,14 +7,15 @@ import LoginPage from '../../routes/LoginPage/LoginPage'
 import RegistrationPage from '../../routes/RegistrationPage/RegistrationPage'
 import AgentProfile from '../../routes/AgentProfile/AgentProfile'
 import DATA from '../../ratingsData'
+import AgentDashboard from '../../routes/AgentDashboard/AgentDashboard';
 
 class App extends React.Component{
   render(){
-    //const agent = DATA.agent
+    const agent = DATA.agent
 
     return (
       <div className='App'>
-        <RegistrationPage />
+        <AgentDashboard agentInfo={agent}/>
       </div>
     );
   }
