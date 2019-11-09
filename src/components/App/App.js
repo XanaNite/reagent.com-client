@@ -13,11 +13,11 @@ import UpdateProfilePage from '../../routes/UpdateProfilePage/UpdateProfilePage'
 
 class App extends React.Component{
   render(){
-    const agent = DATA.agent
+    //const agent = DATA.agent
 
     return (
       <div className='App'>
-        <UpdateProfilePage agentInfo={agent} />
+        <EditProfile />
       </div>
     );
   }
