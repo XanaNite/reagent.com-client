@@ -8,6 +8,8 @@ import RegistrationPage from '../../routes/RegistrationPage/RegistrationPage'
 import AgentProfile from '../../routes/AgentProfile/AgentProfile'
 import DATA from '../../ratingsData'
 import AgentDashboard from '../../routes/AgentDashboard/AgentDashboard';
+import EditProfile from '../../routes/EditProfile/EditProfile';
+import UpdateProfilePage from '../../routes/UpdateProfilePage/UpdateProfilePage'
 
 class App extends React.Component{
   render(){
@@ -15,7 +17,7 @@ class App extends React.Component{
 
     return (
       <div className='App'>
-        <AgentDashboard agentInfo={agent}/>
+        <UpdateProfilePage agentInfo={agent} />
       </div>
     );
   }
