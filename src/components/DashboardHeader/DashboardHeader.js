@@ -13,7 +13,7 @@ export default function DashboardHeader(){
                     <h1><Link to='/'>REagent.com</Link></h1>
                     <span>for Professionals</span>
                 </div>
-                <div className="profileImg-container">
+                <div className="dashboardImg-container">
                     <Link to='/myprofile'><img src="../images/placeholderProfile.png" alt="Agent profile" /></Link>
                 </div>
             </nav>

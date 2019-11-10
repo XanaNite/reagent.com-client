@@ -1,0 +1,20 @@
+.agentProfile-section{
+    height: 380px;
+}
+
+.updateProfileBanner{
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background: rgb(238, 214, 163) url("../../images/placeholderBackground.jpg") no-repeat center;
+    background-size: contain;
+}
+
+.updateProfileBanner img{
+    width: 100px;
+    margin-top: 200px;
+}
+
+.updateProfileBanner-name{
+    padding-bottom: 100px;
+}

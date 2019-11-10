@@ -3,7 +3,7 @@ import './DashboardAgentListings.css'
 
 export default function DashboardAgentListings(){
     return(
-        <div className="container">
+        <div className="dashboardMain-container">
             <div className="dashboardListing-listingInfo">
                 <h2>Your new listings in the last 30 days</h2>
                 <div className="dashboardListing-new">

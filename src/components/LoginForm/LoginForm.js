@@ -1,10 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import './LoginForm.css'
 
 export default class LoginForm extends React.Component {
     render(){
         return(
-            <form className="signIn-form">
+            <form className="login-form">
                 <div role='alert'>
                     
                 </div>
@@ -24,7 +25,7 @@ export default class LoginForm extends React.Component {
                 <p>Forgot password?</p>
                 <input type="checkbox" name="rememberMe" id="rememberMe" checked />
                 <label htmlFor="rememberMe">Remember me</label>
-                <div className="signIn-button">
+                <div className="login-button">
                     <button><Link to='/dashboard'>Log in</Link></button>
                 </div>
             </form>

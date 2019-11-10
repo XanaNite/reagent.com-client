@@ -1,0 +1,12 @@
+.dashboardListing-listingInfo{
+    margin-bottom: 100px;
+}
+
+.dashboardListing-none{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.dashboardListing-none h3{
+    font-weight: 500;
+}

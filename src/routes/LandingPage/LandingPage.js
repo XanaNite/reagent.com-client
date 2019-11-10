@@ -16,7 +16,7 @@ function renderAgents(arr){
 
 export default function LandingPage(props){
     return (
-        <div className='LandingPage-container'>
+        <main className='LandingPage-main'>
             <Header />
             <section className='agentList-section'>
                 <h2>Agents</h2>
@@ -30,6 +30,6 @@ export default function LandingPage(props){
                 <section className="listings-section flexbox-around">
                 </section>
             </div>
-        </div>
+        </main>
     );
 }

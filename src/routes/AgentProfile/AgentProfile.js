@@ -10,24 +10,24 @@ import AgentAboutSection from '../../components/AgentAboutSection/AgentAboutSect
 
 export default function AgentProfile(props){
     return(
-        <>
-        <Header />
-        <AgentImgSection agent={props.agent} />
-        <section className="agentInfo">
-            <AgentAboutSection agent={props.agent} />
-            <div className="agentInfo-listings"></div>
-            <div className="agentInfo-ratings">
-                <h4>Ratings and Reviews</h4>
-                <div className="overallRating">
-                    <Rating value={props.agent.ratings.agentOverall} />
+        <main className='agentProfile-main'>
+            <Header />
+            <AgentImgSection agent={props.agent} />
+            <section className="agentInfo">
+                <AgentAboutSection agent={props.agent} />
+                <div className="agentInfo-listings"></div>
+                <div className="agentInfo-ratings">
+                    <h4>Ratings and Reviews</h4>
+                    <div className="overallRating">
+                        <Rating value={props.agent.ratings.agentOverall} />
+                    </div>
+                    <ClientRatingList clientRatings={props.agent.ratings.clientRatings}/>
                 </div>
-                <ClientRatingList clientRatings={props.agent.ratings.clientRatings}/>
-            </div>
-            <div className="agentInfo-recommendations">
-                <h4>Recommendations</h4>
-                <ClientRecommendList recommendation={props.agent.recommendation}/>
-            </div>
-        </section>
-        </>
+                <div className="agentInfo-recommendations">
+                    <h4>Recommendations</h4>
+                    <ClientRecommendList recommendation={props.agent.recommendation}/>
+                </div>
+            </section>
+        </main>
     )
 }

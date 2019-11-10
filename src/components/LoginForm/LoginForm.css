@@ -1,0 +1,41 @@
+.login-form{
+    margin-top: 50px;
+}
+
+.login-input{
+    margin-top: 15px;
+}
+
+.login-form input[type=text]{
+    width: 80%;
+    height: 30px;
+}
+
+.login-button{
+    text-align: center;
+}
+
+.login-form p{
+    color: rgb(80, 95, 182);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.login-button{
+    text-align: center;
+}
+
+.login-form button{
+    background-color: #384CB8;
+    border: 0;
+    border-radius: 2px;
+    width: 75px;
+    height: 40px;
+    font-size: 16px;
+    margin: 25px;
+}
+
+.login-form a{
+    text-decoration: none;
+    color: whitesmoke;
+}

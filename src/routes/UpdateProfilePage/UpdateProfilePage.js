@@ -6,12 +6,12 @@ import ProfileAboutMeSection from '../../components/ProfileAboutMeSection/Profil
 
 export default function UpdateProfilePage(props){
     return(
-        <>
-        <DashboardHeader />
-        <ProfileImgSection agentInfo={props.agentInfo} />
-        <div className="agentProfile-container">
-            <ProfileAboutMeSection agentInfo={props.agentInfo} />
-        </div>
-        </>
+        <main className='updateProfilePage-main'>
+            <DashboardHeader />
+            <ProfileImgSection agentInfo={props.agentInfo} />
+            <div className="agentProfile-container">
+                <ProfileAboutMeSection agentInfo={props.agentInfo} />
+            </div>
+        </main>
     )
 }

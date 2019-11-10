@@ -10,10 +10,6 @@
   flex-wrap: wrap;
 }
 
-.flexbox-between li{
-  list-style-type: none;
-}
-
 a{
   text-decoration: none;
 }

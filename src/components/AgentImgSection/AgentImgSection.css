@@ -1,0 +1,41 @@
+.profileBanner{
+    width: 100%;
+    height: 250px;
+    background: rgb(238, 214, 163) url("../../images/placeholderBackground.jpg") no-repeat center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.profileBanner img{
+    width: 100px;
+    margin: 25px 50px 25px 50px;
+}
+
+.profileBanner-name{
+    padding-bottom: 100px;
+}
+
+.profileBanner-name h2{
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 490px){
+    .profileBanner{
+        height: 400px;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .profileBanner img{
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 1050px){
+    .profileBanner{
+        height: 500px;
+    }
+}

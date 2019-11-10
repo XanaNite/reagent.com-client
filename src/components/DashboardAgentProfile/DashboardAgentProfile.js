@@ -4,7 +4,7 @@ import './DashboardAgentProfile.css'
 
 export default function DashboardAgentProfile(props){
     return(
-        <div className="container">
+        <div className="dashboardMain-container">
             <div className="dashboardAgent-agentInfo">
                 <div className="dashboardAgent-profile">
                     <img src="../images/placeholderProfile.png" alt="Agent profile" />

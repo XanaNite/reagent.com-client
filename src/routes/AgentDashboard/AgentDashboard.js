@@ -5,14 +5,14 @@ import DashboardAgentProfile from '../../components/DashboardAgentProfile/Dashbo
 
 export default function AgentDashboard(props){
     return(
-        <>
-        <DashboardHeader />
-        <section className="dashboardAgent-section dashboardMain-section">
-            <DashboardAgentProfile agentInfo={props.agentInfo}/>
-        </section>
-        <section className="dashboardListing-section dashboardMain-section">
-            
-        </section>
-        </>
+        <main className='dashboardMain'>
+            <DashboardHeader />
+            <section className="dashboardAgent-section dashboardMain-section">
+                <DashboardAgentProfile agentInfo={props.agentInfo}/>
+            </section>
+            <section className="dashboardListing-section dashboardMain-section">
+                
+            </section>
+        </main>
     )
 }
