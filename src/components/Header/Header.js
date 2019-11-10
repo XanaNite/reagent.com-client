@@ -1,13 +1,14 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './Header.css'
 
 export default function Header(){
     return(
-    <header role="banner">
+    <header role="banner" className='headerSection'>
         <nav role="navigation">
-            Agent Dashboard: <span><a href="signIn.html">Log In</a></span> <span><a href="signUp.html">Sign Up</a></span>
+            Agent Dashboard: <span><Link to="/login">Log In</Link></span> <span><Link to="/register">Sign Up</Link></span>
         </nav>
-        <h1><a href="landingPage.html">REagent.com</a></h1>
+        <h1><Link to="/">REagent.com</Link></h1>
     </header>
     )
 }

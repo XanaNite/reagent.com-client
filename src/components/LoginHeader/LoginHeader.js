@@ -1,14 +1,15 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './LoginHeader.css'
 
 export default function LoginHeader(){
     return(
-        <header role="banner">
+        <header role="banner" className='loginHeader'>
             <nav role="navigation">
-                <a href="signUp.html">Sign Up</a>
+                <Link to='/register'>Sign Up</Link>
             </nav>
             <div className="signIn-title">
-                <h1><a href="index.html">REagent.com</a></h1>
+                <h1><Link to='/'>REagent.com</Link></h1>
                 <span>for Professionals</span>
             </div>
         </header>

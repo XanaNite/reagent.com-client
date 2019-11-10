@@ -2,7 +2,7 @@ import React from 'react'
 import Rating from '../../components/Rating/Rating'
 import ClientRatingList from '../../components/ClientRatingList/ClientRatingList'
 import ClientRecommendList from '../../components/ClientRecommendList/ClientRecommendList'
-import AgentListingsList from '../../components/AgentListingsList/AgentListingsList'
+//import AgentListingsList from '../../components/AgentListingsList/AgentListingsList'
 import Header from '../../components/Header/Header';
 import './AgentProfile.css'
 
@@ -38,10 +38,7 @@ export default function AgentProfile(props){
                     </div>
                 </div>
             </div>
-            <div className="agentInfo-listings">
-                <h4>Listing Activity</h4>
-                <AgentListingsList agentListings={props.agent.agentListings} />
-            </div>
+            <div className="agentInfo-listings"></div>
             <div className="agentInfo-ratings">
                 <h4>Ratings and Reviews</h4>
                 <div className="overallRating">

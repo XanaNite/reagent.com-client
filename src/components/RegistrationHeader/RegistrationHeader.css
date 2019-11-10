@@ -1,12 +1,8 @@
-header h1{
+.regHeader h1{
     padding-left: 10px;
 }
 
-h1 a{
-    text-decoration: none;
-}
-
-nav {
+.regHeader {
     padding-left: 10px;
     padding-bottom: 2px;
     background-color: rgb(37, 23, 71);
@@ -14,11 +10,11 @@ nav {
     text-align: right;
 }
 
-nav span{
+.regHeader span{
     padding-left: 20px;
 }
 
-nav a{
+.regHeader a{
     color: seashell;
     text-decoration: none;
     margin-right: 5px;

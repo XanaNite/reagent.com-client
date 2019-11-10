@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default class LoginForm extends React.Component {
     render(){
@@ -24,7 +25,7 @@ export default class LoginForm extends React.Component {
                 <input type="checkbox" name="rememberMe" id="rememberMe" checked />
                 <label htmlFor="rememberMe">Remember me</label>
                 <div className="signIn-button">
-                    <button><a href="dashboard/agentDashboard.html">Log in</a></button>
+                    <button><Link to='/dashboard'>Log in</Link></button>
                 </div>
             </form>
         )

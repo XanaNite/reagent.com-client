@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './ProfileAboutMeSection.css'
 
 function inputValue(value){
@@ -53,7 +54,7 @@ export default function ProfileAboutMeSection(props){
                     <h4>Bio</h4>
                     <p>{inputValue(props.agentInfo.agentBio)}</p>
                 </div>
-                <a href="editProfile.html">Edit</a>
+                <Link to='/editprofile'>Edit</Link>
             </div>
         </section>
     )

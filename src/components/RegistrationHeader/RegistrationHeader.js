@@ -1,14 +1,15 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './RegistrationHeader.css'
 
 export default function RegistrationHeader(){
     return(
-        <header role="banner">
+        <header role="banner" className='regHeader'>
             <nav role="navigation">
-                <a href="signIn.html">Log In</a>
+                <Link to='/login'>Log In</Link>
             </nav>
             <div className="signIn-title">
-                <h1><a href="index.html">REagent.com</a></h1>
+                <h1><Link to='/'>REagent.com</Link></h1>
                 <span>for Professionals</span>
             </div>
         </header>

@@ -11,9 +11,12 @@ export default class AgentListingsList extends React.Component{
             <AgentListing {...agentListing} key={i} />)
 
         return(
+            <>
+            <h4>Listing Activity</h4>
             <div className="listing-group-container flexbox-around">
                 {agentListings}
             </div>
+            </>
         )
     }
 }

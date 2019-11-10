@@ -1,13 +1,14 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './ProfileImgSection.css'
 
 export default function ProfileImgSection(props){
     return(
         <section className="agentProfile-section">
-            <a href="../agentProfile.html">View Profile</a>
-            <div className="profileBanner">
+            <Link to='/'>View Profile</Link>
+            <div className="updateProfileBanner">
                 <img src="images/placeholderProfile.png" alt="Profile" />
-                <div className="profileBanner-name">
+                <div className="updateProfileBanner-name">
                     <h2>{props.agentInfo.agentName}</h2>
                 </div>
             </div>

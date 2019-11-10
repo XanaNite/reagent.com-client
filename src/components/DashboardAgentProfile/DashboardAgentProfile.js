@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './DashboardAgentProfile.css'
 
 export default function DashboardAgentProfile(props){
@@ -27,7 +28,7 @@ export default function DashboardAgentProfile(props){
                     </table>
                 </div>
             </div>
-            <a href="profileForm.html">Improve your profile</a>
+            <Link to='/myprofile'>Improve your profile</Link>
         </div>
     )
 }

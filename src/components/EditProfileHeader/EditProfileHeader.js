@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './EditProfileHeader.css'
 
 export default function EditProfileHeader(){
@@ -7,7 +8,7 @@ export default function EditProfileHeader(){
             <div className="accountSettings-nav flexbox-between">
                 <h1>[[AGENT NAME]]</h1>
                 <nav role="navigation">
-                    <a href="profileForm.html">X</a>
+                    <Link to='/myprofile'>X</Link>
                 </nav>
             </div>
         </header>
