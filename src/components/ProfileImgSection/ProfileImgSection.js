@@ -5,7 +5,7 @@ import './ProfileImgSection.css'
 export default function ProfileImgSection(props){
     return(
         <section className="agentProfile-section">
-            <Link to='/'>View Profile</Link>
+            <Link to='/agent'>View Profile</Link>
             <div className="updateProfileBanner">
                 <img src="images/placeholderProfile.png" alt="Profile" />
                 <div className="updateProfileBanner-name">

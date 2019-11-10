@@ -1,3 +1,12 @@
+.agentList-section{
+    margin-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.LandingPage-container h2{
+    text-align: center;
+}
+
 .listings-section{
     margin: 25px;
 }

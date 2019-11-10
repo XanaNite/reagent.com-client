@@ -5,39 +5,16 @@ import ClientRecommendList from '../../components/ClientRecommendList/ClientReco
 //import AgentListingsList from '../../components/AgentListingsList/AgentListingsList'
 import Header from '../../components/Header/Header';
 import './AgentProfile.css'
+import AgentImgSection from '../../components/AgentImgSection/AgentImgSection';
+import AgentAboutSection from '../../components/AgentAboutSection/AgentAboutSection';
 
 export default function AgentProfile(props){
     return(
         <>
         <Header />
-        <section className="agentProfile-section">
-            <div className="profileBanner">
-                <img src={window.location.origin + "/images/placeholderProfile.png"} alt="Profile" />
-                <div className="profileBanner-name">
-                    <h2>{props.agent.agentName}, {props.agent.agentTitle} &#8226; {props.agent.agentLocation}</h2>
-                    <div className="overallRating">
-                        <Rating value={props.agent.ratings.agentOverall} />
-                    </div>
-                </div>
-            </div>
-        </section>
+        <AgentImgSection agent={props.agent} />
         <section className="agentInfo">
-            <div className="agentInfo-about">
-                <h3>About {props.agent.agentName} with {props.agent.agentOffice}</h3>
-                <div className="about-container">
-                    <p id="agentBio">{props.agent.agentBio}</p>
-                    <div className="aboutDetails-container">
-                        <p>Experience: {props.agent.agentExperience}</p>
-                        <p>Specializations: {props.agent.agentSpecialization}</p>
-                        <p>Areas Served: {props.agent.agentAreasServed}</p>
-                        <p>Brokerage: {props.agent.agentbrokerage}</p>
-                        <p>Slogan: {props.agent.agentSlogan}</p>
-                        <p>Designations & Certifications</p>
-                        <p>Price Range (last 24 months)</p>
-                        <p>Recommendations count</p>
-                    </div>
-                </div>
-            </div>
+            <AgentAboutSection agent={props.agent} />
             <div className="agentInfo-listings"></div>
             <div className="agentInfo-ratings">
                 <h4>Ratings and Reviews</h4>

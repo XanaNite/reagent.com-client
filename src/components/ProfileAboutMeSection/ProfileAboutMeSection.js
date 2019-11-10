@@ -1,16 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import './ProfileAboutMeSection.css'
-
-function inputValue(value){
-    let data = (value == null) ? 'Not entered' : value;
-    return data;
-}
-
-function multipleInputValues(value){
-    let data = value.join(', ')
-    return data;
-}
+import {inputValue, multipleInputValues} from '../Utils/Utils'
 
 export default function ProfileAboutMeSection(props){
     return (

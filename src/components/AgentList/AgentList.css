@@ -1,0 +1,24 @@
+.AgentList-container{
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+.AgentList-container img{
+    width: 75px;
+}
+
+.AgentList-container h3{
+    margin: 0;
+    font-weight: 500;
+}
+
+.AgentListImg-container{
+    border-bottom: 1px solid lightgray;
+}
+
+.AgentListSlogan{
+    font-size: 14px;
+    text-align: center;
+}
