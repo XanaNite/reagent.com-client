@@ -8,7 +8,7 @@ export default function AgentDashboard(props){
         <main className='dashboardMain'>
             <DashboardHeader />
             <section className="dashboardAgent-section dashboardMain-section">
-                <DashboardAgentProfile agentInfo={props.agentInfo}/>
+                <DashboardAgentProfile agentInfo={props.agentInfo[0]}/>
             </section>
             <section className="dashboardListing-section dashboardMain-section">
                 

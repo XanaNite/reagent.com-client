@@ -18,7 +18,7 @@ class App extends React.Component{
       <div className='App'>
         <Switch>
           <Route exact path={'/'} render={() => <LandingPage agent={agent} />} />
-          <Route path={'/agent'} render={() => <AgentProfile agent={agent} />} />
+          <Route path={'/agent/:agent_id'} component={AgentProfile} />
           <Route path={'/login'} component={LoginPage} />
           <Route path={'/register'} component={RegistrationPage} />
           <Route path={'/dashboard'} render={() => <AgentDashboard agentInfo={agent} />} />

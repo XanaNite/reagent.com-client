@@ -7,25 +7,30 @@ import Header from '../../components/Header/Header';
 import './AgentProfile.css'
 import AgentImgSection from '../../components/AgentImgSection/AgentImgSection';
 import AgentAboutSection from '../../components/AgentAboutSection/AgentAboutSection';
+import DATA from '../../ratingsData'
 
 export default function AgentProfile(props){
+    const agent = DATA.agent.find(info =>
+        info.id.toString() === props.match.params.agent_id
+    )
+
     return(
         <main className='agentProfile-main'>
             <Header />
-            <AgentImgSection agent={props.agent} />
+            <AgentImgSection agent={agent} />
             <section className="agentInfo">
-                <AgentAboutSection agent={props.agent} />
+                <AgentAboutSection agent={agent} />
                 <div className="agentInfo-listings"></div>
                 <div className="agentInfo-ratings">
                     <h4>Ratings and Reviews</h4>
                     <div className="overallRating">
-                        <Rating value={props.agent.ratings.agentOverall} />
+                        <Rating value={agent.ratings.agentOverall} />
                     </div>
-                    <ClientRatingList clientRatings={props.agent.ratings.clientRatings}/>
+                    <ClientRatingList clientRatings={agent.ratings.clientRatings}/>
                 </div>
                 <div className="agentInfo-recommendations">
                     <h4>Recommendations</h4>
-                    <ClientRecommendList recommendation={props.agent.recommendation}/>
+                    <ClientRecommendList recommendation={agent.recommendation}/>
                 </div>
             </section>
         </main>
