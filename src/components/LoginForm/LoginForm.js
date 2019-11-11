@@ -23,7 +23,7 @@ export default class LoginForm extends React.Component {
                     </div>
                 </div>
                 <p>Forgot password?</p>
-                <input type="checkbox" name="rememberMe" id="rememberMe" checked />
+                <input type="checkbox" name="rememberMe" id="rememberMe" />
                 <label htmlFor="rememberMe">Remember me</label>
                 <div className="login-button">
                     <button><Link to='/dashboard'>Log in</Link></button>

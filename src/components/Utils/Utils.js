@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 export function inputValue(value){
     let data = (value == null) ? 'Not entered' : value;
