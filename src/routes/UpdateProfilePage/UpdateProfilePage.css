@@ -1,6 +1,6 @@
 .profileMain-section{
-    margin: 10px;
-    padding: 5px 10px 5px 10px;
+    margin-bottom: 25px;
+    padding: 10px 15px 10px 15px;
     border-radius: 2px;
     background-color: whitesmoke;
 }
@@ -11,4 +11,15 @@
 
 .updateProfilePage-main p{
     margin-top: 5px;
+}
+
+@media screen and (min-width: 490px){
+    .profileMain-section{
+        width: 320px;
+    }
+
+    .agentProfile-container{
+        display: flex;
+        justify-content: space-evenly;
+    }
 }

@@ -5,7 +5,7 @@ import './EditProfileHeader.css'
 export default function EditProfileHeader(){
     return (
         <header role="banner" className="sectionBorders">
-            <div className="accountSettings-nav flexbox-between">
+            <div className="EditProfileHeader-nav flexbox-between">
                 <h1>[[AGENT NAME]]</h1>
                 <nav role="navigation">
                     <Link to='/myprofile'>X</Link>

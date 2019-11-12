@@ -1,0 +1,28 @@
+.editFormSpacing{
+    margin: 5px;
+}
+
+.editForm-container input[type=text]{
+    width: 200px;
+    height: 25px;
+}
+
+.phoneType-container{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.editForm-button{
+    text-align: center;
+    margin: 25px;
+}
+
+.editForm-button button{
+    width: 100px;
+    border: 0;
+    border-radius: 2px;
+    height: 40px;
+    font-size: 16px;
+    margin: 25px;
+}

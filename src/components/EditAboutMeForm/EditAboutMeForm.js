@@ -6,74 +6,83 @@ export default function EditAboutMeForm(){
         <div className="editAboutMe-container sectionBorders">
             <form className="editAboutMe-form">
                 <h3>Update Your Profile</h3>
-                <div className="editAboutMe-container">
-                    <div className="newFirstName-container">
+                <div className="editForm-container">
+                    <div className="newFirstName-container flexbox-between editFormSpacing">
                         <label htmlFor="newFirstName">First name</label>
                         <input type="text" name="newFirstName" id="newFirstName" />
                     </div>
-                    <div className="newLastName-container">
+                    <div className="newLastName-container flexbox-between editFormSpacing">
                         <label htmlFor="newLastName">Last name</label>
                         <input type="text" name="newLastName" id="newLastName" />
                     </div>
-                    <div className="newSuffix-container">
+                    <div className="newSuffix-container flexbox-between editFormSpacing">
                         <label htmlFor="newSuffix">Suffix</label>
                         <input type="text" name="newSuffix" id="newSuffix" />
                     </div>
-                    <div className="newNickname-container">
+                    <div className="newNickname-container flexbox-between editFormSpacing">
                         <label htmlFor="newNickname">Nickname</label>
                         <input type="text" name="newNickname" id="newNickname" />
                     </div>
-                    <div className="newPhone-container">
-                        <label htmlFor="newPhone">Phone number</label>
-                        <input type="text" name="newPhone" id="newPhone" />
-                        <select name="phoneType" id="phoneType">
-                            <option value="home">Home</option>
-                            <option value="mobile">Mobile</option>
-                            <option value="office">Office</option>
-                        </select>   
+                    <div className="newPhone-container editFormSpacing">
+                        <div className='flexbox-between'>
+                            <label htmlFor="newPhone">Phone number</label>
+                            <input type="text" name="newPhone" id="newPhone" />
+                        </div>
+                        <div className='phoneType-container'>
+                            <select name="phoneType" id="phoneType">
+                                <option value="home">Home</option>
+                                <option value="mobile">Mobile</option>
+                                <option value="office">Office</option>
+                            </select>
+                        </div> 
                     </div>
-                    <div className="newEmail-container">
-                        <label htmlFor="newEmail">Contact email address</label>
+                    <div className="newEmail-container flexbox-between editFormSpacing">
+                        <label htmlFor="newEmail">Email address</label>
                         <input type="text" name="newEmail" id="newEmail" />
                     </div>
-                    <div className="newTitle-container">
+                    <div className="newTitle-container flexbox-between editFormSpacing">
                         <label htmlFor="newTitle">Professional title</label>
                         <input type="text" name="newTitle" id="newTitle" />
                     </div>
-                    <div className="newExperience-container">
-                        <label htmlFor="newExperience">Years of experience</label>
+                    <div className="newExperience-container flexbox-between editFormSpacing">
+                        <label htmlFor="newExperience">Experience</label>
                         <input type="text" name="newExperience" id="newExperience" />
                     </div>
-                    <div className="newWorkWith-container">
+                    <div className="newWorkWith-container flexbox-between editFormSpacing">
                         <label htmlFor="newWorkWith">Who do you work with?</label>
-                        <input type="text" name="newWorkWith" id="newWorkWith" />
+                        <select name="newWorkWith" id="newWorkWith">
+                            <option value='buyer'>Buyer</option>
+                            <option value='seller'>seller</option>
+                        </select>
                     </div>
-                    <div className="newSpecialties-container">
+                    <div className="newSpecialties-container flexbox-between editFormSpacing">
                         <label htmlFor="newSpecialties">Specialties</label>
                         <input type="text" name="newSpecialties" id="newSpecialties" />
                     </div>
-                    <div className="newAreas-container">
+                    <div className="newAreas-container flexbox-between editFormSpacing">
                         <label htmlFor="newAreas">Areas served</label>
                         <input type="text" name="newAreas" id="newAreas" />
                     </div>
-                    <div className="newZip-container">
+                    <div className="newZip-container flexbox-between editFormSpacing">
                         <label htmlFor="newZip">Zip codes served</label>
                         <input type="text" name="newZip" id="newZip" />
                     </div>
-                    <div className="newWebsite-container">
+                    <div className="newWebsite-container flexbox-between editFormSpacing">
                         <label htmlFor="newWebsite">Website</label>
                         <input type="text" name="newWebsite" id="newWebsite" />
                     </div>
-                    <div className="newUrl-container">
+                    <div className="newUrl-container flexbox-between editFormSpacing">
                         <label htmlFor="newUrl">Video URL</label>
                         <input type="text" name="newUrl" id="newUrl" />
                     </div>
-                    <div className="newBio-container">
+                    <div className="newBio-container flexbox-between editFormSpacing">
                         <label htmlFor="newBio">Bio</label>
                         <input type="text" name="newBio" id="newBio" />
                     </div>
                 </div>
-                <button type="submit">Update</button>
+                <div className='editForm-button'>
+                    <button type="submit">Update</button>
+                </div>
             </form>
         </div>
     )
