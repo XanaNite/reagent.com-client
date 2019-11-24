@@ -6,8 +6,8 @@
     display: flex;
 }
 
-.dashboardAgent-profile img{
-    width: 100px;
+.dashboardAgent-profile-img{
+    font-size: 100px;
 }
 
 .dashboardAgent-name{

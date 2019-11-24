@@ -10,8 +10,8 @@
     margin: 0;
 }
 
-.dashboardImg-container img{
-    width: 30px;
+.dashboardImg-container{
+    font-size: 30px;
     margin: 5px;
 }
 

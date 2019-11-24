@@ -9,17 +9,14 @@
     color: white;
 }
 
-.profileBanner img{
-    width: 100px;
-    margin: 25px 50px 25px 50px;
-}
-
-.profileBanner-name{
-    padding-bottom: 100px;
+.profileBanner-img{
+    font-size: 100px;
+    margin: 25px 50px 0px 50px;
 }
 
 .profileBanner-name h2{
-    margin-bottom: 10px;
+    margin: 0px 10px;
+    font-size: 14px;
 }
 
 @media screen and (min-width: 490px){
@@ -29,8 +26,14 @@
         align-items: flex-end;
     }
 
-    .profileBanner img{
-        width: 150px;
+    .profileBanner-img{
+        font-size: 150px;
+        margin-right: 0;
+    }
+
+    .profileBanner-name h2{
+        margin: 0px 10px;
+        font-size: 18px;
     }
 }
 

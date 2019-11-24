@@ -1,5 +1,5 @@
 .updateProfileBanner-section{
-    height: 380px;
+    height: 350px;
 }
 
 .updateProfileBanner{
@@ -10,11 +10,11 @@
     background-size: contain;
 }
 
-.updateProfileBanner img{
-    width: 100px;
-    margin-top: 200px;
+.updateProfileBanner-img{
+    font-size: 100px;
+    padding-top: 110px;
 }
 
 .updateProfileBanner-name{
-    padding-bottom: 100px;
+    padding-top: 10px;
 }

@@ -1,13 +1,17 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
 import './ProfileImgSection.css'
 
 export default function ProfileImgSection(props){
     return(
         <section className="updateProfileBanner-section">
-            <Link to='/agent'>View Profile</Link>
+            <Link to='/agent/1'>View Profile</Link>
             <div className="updateProfileBanner">
-                <img src="images/placeholderProfile.png" alt="Profile" />
+                <div className='updateProfileBanner-img'>
+                    <FontAwesomeIcon icon={faUser} />
+                </div>
                 <div className="updateProfileBanner-name">
                     <h2>{props.agentInfo.agentName}</h2>
                 </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faUser } from '@fortawesome/free-solid-svg-icons'
 import './DashboardHeader.css'
 
 export default function DashboardHeader(){
@@ -16,7 +16,7 @@ export default function DashboardHeader(){
                     <span>for Professionals</span>
                 </div>
                 <div className="dashboardImg-container">
-                    <Link to='/myprofile'><img src="../images/placeholderProfile.png" alt="Agent profile" /></Link>
+                    <Link to='/myprofile'><FontAwesomeIcon icon={faUser} /></Link>
                 </div>
             </nav>
         </header>

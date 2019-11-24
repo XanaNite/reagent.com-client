@@ -5,8 +5,8 @@
     background-color: whitesmoke;
 }
 
-.AgentList-container img{
-    width: 75px;
+.AgentList-container-img{
+    font-size: 75px;
 }
 
 .AgentList-container h3{
