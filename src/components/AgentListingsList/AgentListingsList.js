@@ -21,6 +21,6 @@ export default class AgentListingsList extends React.Component{
     }
 }
 
-AgentListingsList.dedaultProps = {
+AgentListingsList.defaultProps = {
     agentListings: [],
 }
