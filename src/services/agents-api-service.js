@@ -3,11 +3,7 @@ import config from '../config'
 
 const AgentApiService = {
     getAgents(){
-        return fetch(`${config.API_ENDPOINT}/agents`, {
-            headers: {
-              'authorization': `basic ${TokenService.getAuthToken()}`,
-            },
-        })
+        return fetch(`${config.API_ENDPOINT}/agents`)
         .then(res =>
             (!res.ok)
                 ? res.json().then(e => Promise.reject(e))

@@ -12,11 +12,11 @@ export default function AgentList(props){
                     <Link to={`/agent/${props.agent.id}`}><FontAwesomeIcon icon={faUser} /></Link>
                 </div>
                 <div className='AgentListInfo-container'>
-                <Link to={`/agent/${props.agent.id}`}><h3>{props.agent.agentName}</h3></Link>
-                    <p>{props.agent.agentOffice}</p>
+                <Link to={`/agent/${props.agent.id}`}><h3>{props.agent.first_name} {props.agent.last_name}</h3></Link>
+                    <p>{props.agent.office}</p>
                 </div>
             </div>
-            <p className='AgentListSlogan'>"{props.agent.agentSlogan}"</p>
+            <p className='AgentListSlogan'>"{props.agent.slogan}"</p>
         </div>
     )
 }
