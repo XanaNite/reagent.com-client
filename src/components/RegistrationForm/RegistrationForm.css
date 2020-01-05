@@ -11,6 +11,11 @@
     height: 30px;
 }
 
+.register-form input[type=password]{
+    width: 80%;
+    height: 30px;
+}
+
 .register-button{
     text-align: center;
 }
