@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import './AgentImgSection.css'
-import Rating from '../Rating/Rating'
+//import Rating from '../Rating/Rating'
 
 export default function AgentImgSection(props){
     return (
@@ -12,9 +12,9 @@ export default function AgentImgSection(props){
                     <FontAwesomeIcon icon={faUser} />
                 </div>
                 <div className="profileBanner-name">
-                    <h2>{props.agent.agentName}, {props.agent.agentTitle} &#8226; {props.agent.agentLocation}</h2>
+                    <h2>{props.agent.first_name} {props.agent.last_name}, {props.agent.title} &#8226; {props.agent.city}, {props.agent.state}</h2>
                     <div className="overallRating">
-                        <Rating value={props.agent.ratings.agentOverall} />
+                        {/*<Rating value={props.agent.ratings.agentOverall} />*/}
                     </div>
                 </div>
             </div>

@@ -11,11 +11,7 @@ const AgentApiService = {
         )
     },
     getAgent(agentId){
-        return fetch(`${config.API_ENDPOINT}/agents/${agentId}`, {
-            headers: {
-              'authorization': `basic ${TokenService.getAuthToken()}`,
-            },
-        })
+        return fetch(`${config.API_ENDPOINT}/agents/${agentId}`)
         .then(res =>
             (!res.ok)
                 ? res.json().then(e => Promise.reject(e))

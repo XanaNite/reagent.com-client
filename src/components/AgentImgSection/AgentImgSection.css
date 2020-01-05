@@ -19,6 +19,10 @@
     font-size: 14px;
 }
 
+.overallRating{
+    height: 50px;
+}
+
 @media screen and (min-width: 490px){
     .profileBanner{
         height: 400px;
