@@ -1,7 +1,7 @@
 import React from 'react'
 import './EditAboutMeForm.css'
 
-export default function EditAboutMeForm(){
+export default function EditAboutMeForm(props){
     return (
         <div className="editAboutMe-container sectionBorders">
             <form className="editAboutMe-form">
@@ -9,24 +9,24 @@ export default function EditAboutMeForm(){
                 <div className="editForm-container">
                     <div className="newFirstName-container flexbox-between editFormSpacing">
                         <label htmlFor="newFirstName">First name</label>
-                        <input type="text" name="newFirstName" id="newFirstName" />
+                        <input type="text" name="newFirstName" id="newFirstName" defaultValue={props.agent.first_name} />
                     </div>
                     <div className="newLastName-container flexbox-between editFormSpacing">
                         <label htmlFor="newLastName">Last name</label>
-                        <input type="text" name="newLastName" id="newLastName" />
+                        <input type="text" name="newLastName" id="newLastName" defaultValue={props.agent.last_name} />
                     </div>
-                    <div className="newSuffix-container flexbox-between editFormSpacing">
+                    {/*<div className="newSuffix-container flexbox-between editFormSpacing">
                         <label htmlFor="newSuffix">Suffix</label>
                         <input type="text" name="newSuffix" id="newSuffix" />
                     </div>
                     <div className="newNickname-container flexbox-between editFormSpacing">
                         <label htmlFor="newNickname">Nickname</label>
                         <input type="text" name="newNickname" id="newNickname" />
-                    </div>
+                    </div>*/}
                     <div className="newPhone-container editFormSpacing">
                         <div className='flexbox-between'>
                             <label htmlFor="newPhone">Phone number</label>
-                            <input type="text" name="newPhone" id="newPhone" />
+                            <input type="text" name="newPhone" id="newPhone" defaultValue={props.agent.agent_phone} />
                         </div>
                         <div className='phoneType-container'>
                             <select name="phoneType" id="phoneType">
@@ -38,17 +38,17 @@ export default function EditAboutMeForm(){
                     </div>
                     <div className="newEmail-container flexbox-between editFormSpacing">
                         <label htmlFor="newEmail">Email address</label>
-                        <input type="text" name="newEmail" id="newEmail" />
+                        <input type="text" name="newEmail" id="newEmail" defaultValue={props.agent.agent_email} />
                     </div>
                     <div className="newTitle-container flexbox-between editFormSpacing">
                         <label htmlFor="newTitle">Professional title</label>
-                        <input type="text" name="newTitle" id="newTitle" />
+                        <input type="text" name="newTitle" id="newTitle" defaultValue={props.agent.title} />
                     </div>
                     <div className="newExperience-container flexbox-between editFormSpacing">
                         <label htmlFor="newExperience">Experience</label>
-                        <input type="text" name="newExperience" id="newExperience" />
+                        <input type="text" name="newExperience" id="newExperience" defaultValue={props.agent.experience} />
                     </div>
-                    <div className="newWorkWith-container flexbox-between editFormSpacing">
+                    {/*<div className="newWorkWith-container flexbox-between editFormSpacing">
                         <label htmlFor="newWorkWith">Who do you work with?</label>
                         <select name="newWorkWith" id="newWorkWith">
                             <option value='buyer'>Buyer</option>
@@ -74,10 +74,10 @@ export default function EditAboutMeForm(){
                     <div className="newUrl-container flexbox-between editFormSpacing">
                         <label htmlFor="newUrl">Video URL</label>
                         <input type="text" name="newUrl" id="newUrl" />
-                    </div>
+                    </div>*/}
                     <div className="newBio-container flexbox-between editFormSpacing">
                         <label htmlFor="newBio">Bio</label>
-                        <input type="text" name="newBio" id="newBio" />
+                        <textarea name="newBio" id="newBio" defaultValue={props.agent.bio} />
                     </div>
                 </div>
                 <div className='editForm-button'>

@@ -7,6 +7,11 @@
     height: 25px;
 }
 
+.editForm-container textarea{
+    width: 200px;
+    height: 100px;
+}
+
 .phoneType-container{
     margin: 10px 0px;
     display: flex;
