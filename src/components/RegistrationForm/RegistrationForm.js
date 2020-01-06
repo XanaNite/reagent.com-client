@@ -14,7 +14,7 @@ export default class RegistrationForm extends React.Component {
         ev.preventDefault()
         const {first_name, last_name, user_name, password, agent_email, agent_phone} = ev.target
         this.setState({ error: null })
-        console.log(first_name)
+        console.log(first_name.value)
 
         AuthApiService.postAgent({
             first_name: first_name.value,
@@ -33,7 +33,7 @@ export default class RegistrationForm extends React.Component {
             agent_phone.value = ''
             this.props.onRegistrationSuccess()
         })
-        .catch(res => {this.setState({error: res.error})})
+        .catch(res => console.log(res.error))
     }
 
     render() {
@@ -41,7 +41,7 @@ export default class RegistrationForm extends React.Component {
 
         return(
             <form className="register-form" onSubmit={this.handleSubmit}>
-                <div role='alert'>{error && <p className='red'>{error}</p>}</div>
+                <div role='alert'></div>
                 <div className="register-input">
                     <label htmlFor="agent_email">Email address</label>
                     <div>
@@ -79,7 +79,7 @@ export default class RegistrationForm extends React.Component {
                     </div>
                 </div>
                 <div className="register-button">
-                    <button><a href="dashboard/agentDashboard.html">Next Step</a></button>
+                    <button type='submit'>Next Step</button>
                 </div>
             </form>
         )

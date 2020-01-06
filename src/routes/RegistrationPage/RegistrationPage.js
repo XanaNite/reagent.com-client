@@ -14,7 +14,7 @@ export default class RegistrationPage extends React.Component{
 
     handleRegistrationSuccess = agent => {
         const { location, history } = this.props
-        const destination = (location.state || {}).from || '/home'
+        const destination = (location.state || {}).from || '/dashboard'
         history.push(destination)
     }
 

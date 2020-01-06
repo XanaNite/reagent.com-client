@@ -14,9 +14,12 @@ const AuthApiService = {
   postAgent(agent){
     return fetch(`${config.API_ENDPOINT}/agents`, {
         method: 'POST',
-        body: JSON.stringify({
+        headers: {
+          'content-type': 'application/json',
+        },
+        body: JSON.stringify(
             agent
-        }),
+        ),
     })
     .then(res =>
         (!res.ok)
