@@ -13,7 +13,7 @@ export default function ProfileImgSection(props){
                     <FontAwesomeIcon icon={faUser} />
                 </div>
                 <div className="updateProfileBanner-name">
-                    <h2>{props.agentInfo.agentName}</h2>
+                    <h2>{props.agent.first_name} {props.agent.last_name}</h2>
                 </div>
             </div>
         </section>
