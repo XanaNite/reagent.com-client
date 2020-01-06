@@ -5,7 +5,7 @@ import './AgentAboutSection.css'
 export default function AgentAboutSection(props){
     return (
         <div className="agentInfo-about">
-            <h3>About {props.agent.agentName} with {props.agent.office}</h3>
+            <h3>About {props.agent.first_name} {props.agent.last_name} with {props.agent.office}</h3>
             <div className="about-container">
                 <p id="agentBio">{props.agent.bio}</p>
                 <div className="aboutDetails-container">

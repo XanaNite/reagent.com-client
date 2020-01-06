@@ -11,7 +11,7 @@ const AgentApiService = {
         )
     },
     getAgent(agentId){
-        return fetch(`${config.API_ENDPOINT}/agents/${agentId}`)
+        return fetch(`${config.API_ENDPOINT}/api/agents/${agentId}`)
         .then(res =>
             (!res.ok)
                 ? res.json().then(e => Promise.reject(e))

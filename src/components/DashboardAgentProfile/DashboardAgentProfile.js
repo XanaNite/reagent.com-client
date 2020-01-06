@@ -13,8 +13,8 @@ export default function DashboardAgentProfile(props){
                         <FontAwesomeIcon icon={faUser} />
                     </div>
                     <div className="dashboardAgent-name">
-                        <h2>{props.agentInfo.agentName}</h2>
-                        <p>"{props.agentInfo.agentSlogan}"</p>
+                        <h2>{props.agent.first_name} {props.agent.last_name}</h2>
+                        <p>"{props.agent.slogan}"</p>
                     </div>
                 </div>
                 <div className="dashboardAgent-contact">
@@ -22,11 +22,11 @@ export default function DashboardAgentProfile(props){
                         <tbody>
                             <tr>
                                 <td className="tableStyle">Email</td>
-                                <td>{props.agentInfo.agentEmail}</td>
+                                <td>{props.agent.agent_email}</td>
                             </tr>
                             <tr>
                                 <td className="tableStyle">Phone</td>
-                                <td>{props.agentInfo.agentPhone[0].type} {props.agentInfo.agentPhone[0].number}</td>
+                                <td>{props.agent.agent_phone_type} {props.agent.agent_phone}</td>
                             </tr>
                         </tbody>
                     </table>

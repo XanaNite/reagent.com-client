@@ -2,17 +2,34 @@ import React from 'react'
 import './AgentDashboard.css'
 import DashboardHeader from '../../components/DashboardHeader/DashboardHeader'
 import DashboardAgentProfile from '../../components/DashboardAgentProfile/DashboardAgentProfile'
+import AgentContext from '../../contexts/AgentContext'
+import AgentApiService from '../../services/agents-api-service'
 
-export default function AgentDashboard(props){
-    return(
-        <main className='dashboardMain'>
-            <DashboardHeader />
-            <section className="dashboardAgent-section dashboardMain-section">
-                <DashboardAgentProfile agentInfo={props.agentInfo[0]}/>
-            </section>
-            <section className="dashboardListing-section dashboardMain-section">
-                
-            </section>
-        </main>
-    )
+export default class AgentDashboard extends React.Component{
+    static contextType = AgentContext
+
+    componentDidMount(){
+        const agentId = localStorage.getItem('user_id')
+        console.log(agentId)
+        this.context.clearError()
+        AgentApiService.getAgent(agentId)
+            .then(this.context.setAgent)
+            .catch(this.context.setError)
+    }
+
+    render(){
+        const {agent} = this.context
+
+        return(
+            <main className='dashboardMain'>
+                <DashboardHeader />
+                <section className="dashboardAgent-section dashboardMain-section">
+                    <DashboardAgentProfile agent={agent}/>
+                </section>
+                <section className="dashboardListing-section dashboardMain-section">
+                    
+                </section>
+            </main>
+        )
+    }
 }
