@@ -12,14 +12,13 @@ export default class RegistrationForm extends React.Component {
 
     handleSubmit = ev => {
         ev.preventDefault()
-        const {first_name, last_name, user_name, password, agent_email, agent_phone} = ev.target
+        const {first_name, last_name, password, agent_email, agent_phone} = ev.target
         this.setState({ error: null })
         console.log(first_name.value)
 
         AuthApiService.postAgent({
             first_name: first_name.value,
             last_name: last_name.value,
-            user_name: user_name.value,
             password: password.value,
             agent_email: agent_email.value,
             agent_phone: agent_phone.value
@@ -27,13 +26,14 @@ export default class RegistrationForm extends React.Component {
         .then(agent => {
             first_name.value = ''
             last_name.value = ''
-            user_name.value = ''
             password.value = ''
             agent_email.value = ''
             agent_phone.value = ''
             this.props.onRegistrationSuccess()
         })
-        .catch(res => console.log(res.error))
+        .catch(res => 
+            this.setState({error: res.error})    
+        )
     }
 
     render() {
@@ -41,7 +41,9 @@ export default class RegistrationForm extends React.Component {
 
         return(
             <form className="register-form" onSubmit={this.handleSubmit}>
-                <div role='alert'></div>
+                <div role='alert'>
+                    {error && <p className='red'>{error}</p>}
+                </div>
                 <div className="register-input">
                     <label htmlFor="agent_email">Email address</label>
                     <div>
@@ -52,12 +54,6 @@ export default class RegistrationForm extends React.Component {
                     <label htmlFor="password">Password</label>
                     <div>
                         <input type="password" name="password" id="password" />
-                    </div>
-                </div>
-                <div className="register-input">
-                    <label htmlFor="user_name">Username</label>
-                    <div>
-                        <input type="text" name="user_name" id="user_name" />
                     </div>
                 </div>
                 <div className="register-input">
