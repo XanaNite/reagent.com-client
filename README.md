@@ -1,4 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# REagent.com Client
+
+This app is a real estate agent's dashboard that will be editable and supply information to a public profile for users to view
+
+Live: 
+client: https://reagent.now.sh/
+server: 
+
+Server Repo: https://github.com/XanaNite/reagent-server
+
+Demo User: 
+  email: user1@test.com
+  password: Password1!
+
+## Technologies Used
+
+HTML/CSS/JavaScript/React/JSX/Git/NPM
+
+## App Screenshots
+### Fullscreen
+Homepage:
+
+### Mobile
+Homepage:
+
+
 
 ## Available Scripts
 
