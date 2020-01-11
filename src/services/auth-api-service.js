@@ -1,4 +1,4 @@
-import config from '../config'
+import config from '../config';
 
 const AuthApiService = {
   postLogin({ agent_email, password }) {
@@ -9,10 +9,10 @@ const AuthApiService = {
       },
       body: JSON.stringify({ agent_email, password }),
     })
-      .then(res => res.json())
+      .then(res => res.json());
   },
   postAgent(agent){
-    return fetch(`${config.API_ENDPOINT}/agents`, {
+    return fetch(`${config.API_ENDPOINT}/api/agents`, {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
@@ -25,8 +25,8 @@ const AuthApiService = {
         (!res.ok)
             ? res.json().then(e => Promise.reject(e))
             : res.json()
-    )
+    );
   },
-}
+};
 
-export default AuthApiService
+export default AuthApiService;

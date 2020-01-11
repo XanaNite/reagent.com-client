@@ -7,6 +7,15 @@
     height: 25px;
 }
 
+.editForm-container input[type=number]{
+    width: 40px;
+    height: 25px;
+}
+
+.editForm-container span{
+    margin-left: 10px;
+}
+
 .editForm-container textarea{
     width: 200px;
     height: 100px;

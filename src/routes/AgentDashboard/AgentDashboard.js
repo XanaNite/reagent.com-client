@@ -9,7 +9,7 @@ export default class AgentDashboard extends React.Component{
     static contextType = AgentContext
 
     componentDidMount(){
-        const agentId = localStorage.getItem('user_id')
+        const agentId = localStorage.getItem('user_id');
         console.log(agentId)
         this.context.clearError()
         AgentApiService.getAgent(agentId)

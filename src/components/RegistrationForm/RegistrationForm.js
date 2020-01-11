@@ -1,7 +1,7 @@
-import React from 'react'
-import './RegistrationForm.css'
-import TokenService from '../../services/token-service'
-import AuthApiService from '../../services/auth-api-service'
+import React from 'react';
+import './RegistrationForm.css';
+import TokenService from '../../services/token-service';
+import AuthApiService from '../../services/auth-api-service';
 
 export default class RegistrationForm extends React.Component {
     static defaultProps = {
@@ -14,7 +14,6 @@ export default class RegistrationForm extends React.Component {
         ev.preventDefault()
         const {first_name, last_name, password, agent_email, agent_phone} = ev.target
         this.setState({ error: null })
-        console.log(first_name.value)
 
         AuthApiService.postAgent({
             first_name: first_name.value,

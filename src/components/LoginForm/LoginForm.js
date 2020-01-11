@@ -1,7 +1,9 @@
-import React from 'react'
-import './LoginForm.css'
-import TokenService from '../../services/token-service'
-import AuthApiService from '../../services/auth-api-service'
+/*jshint esversion: 6 */
+
+import React from 'react';
+import './LoginForm.css';
+import TokenService from '../../services/token-service';
+import AuthApiService from '../../services/auth-api-service';
 
 export default class LoginForm extends React.Component {
     static defaultProps = {

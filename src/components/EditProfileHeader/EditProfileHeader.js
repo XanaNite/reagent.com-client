@@ -1,6 +1,8 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import './EditProfileHeader.css'
+/*jshint esversion: 6 */
+
+import React from 'react';
+import {Link} from 'react-router-dom';
+import './EditProfileHeader.css';
 
 export default function EditProfileHeader(props){
     return (

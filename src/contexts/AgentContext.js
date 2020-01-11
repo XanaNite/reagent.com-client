@@ -1,4 +1,6 @@
-import React from 'react'
+/*jshint esversion: 6 */
+
+import React from 'react';
 
 const AgentContext = React.createContext({
     agent: [],
@@ -7,32 +9,31 @@ const AgentContext = React.createContext({
     clearError: () => {},
     setAgent: () => {},
     clearAgent: () => {},
-})
+});
 
-export default AgentContext
+export default AgentContext;
 
 export class AgentProvider extends React.Component{
     state = {
         agent: [],
         error: null,
-    }
+    };
 
     setError = error => {
-        console.error(error)
         this.setState({ error })
-    }
+    };
     
     clearError = () => {
         this.setState({ error: null })
-    }
+    };
 
     setAgent = agent =>{
-        this.setState({agent})
-    }
+        this.setState({agent});
+    };
 
     clearAgent = () =>{
-        this.setAgent([])
-    }
+        this.setAgent([]);
+    };
 
     render(){
         const value = {
@@ -42,12 +43,12 @@ export class AgentProvider extends React.Component{
             clearError: this.clearError,
             setAgent: this.setAgent,
             clearAgent: this.clearAgent,
-        }
+        };
 
         return(
             <AgentContext.Provider value={value}>
                 {this.props.children}
             </AgentContext.Provider>
-        )
+        );
     }
 }

@@ -1,8 +1,10 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import LoginHeader from '../../components/LoginHeader/LoginHeader'
-import LoginForm from '../../components/LoginForm/LoginForm'
-import './LoginPage.css'
+/*jshint esversion: 6 */
+
+import React from 'react';
+import {Link} from 'react-router-dom';
+import LoginHeader from '../../components/LoginHeader/LoginHeader';
+import LoginForm from '../../components/LoginForm/LoginForm';
+import './LoginPage.css';
 
 export default class LoginPage extends React.Component{
     static defaultProps = {
