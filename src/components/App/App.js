@@ -12,12 +12,10 @@ import PrivateRoute from '../Utils/PrivateRoute'
 
 class App extends React.Component{
   render(){
-    const agent = DATA.agent
-
     return (
       <div className='App'>
         <Switch>
-          <Route exact path={'/'} render={() => <LandingPage agent={agent} />} />
+          <Route exact path={'/'} component={LandingPage} />
           <Route path={'/agent/:agent_id'} component={AgentProfile} />
           <Route path={'/login'} component={LoginPage} />
           <Route path={'/register'} component={RegistrationPage} />
