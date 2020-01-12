@@ -5,7 +5,6 @@ import LandingPage from '../../routes/LandingPage/LandingPage'
 import LoginPage from '../../routes/LoginPage/LoginPage'
 import RegistrationPage from '../../routes/RegistrationPage/RegistrationPage'
 import AgentProfile from '../../routes/AgentProfile/AgentProfile'
-import DATA from '../../ratingsData'
 import AgentDashboard from '../../routes/AgentDashboard/AgentDashboard';
 import EditProfile from '../../routes/EditProfile/EditProfile';
 import UpdateProfilePage from '../../routes/UpdateProfilePage/UpdateProfilePage'
