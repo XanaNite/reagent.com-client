@@ -1,7 +1,7 @@
 
 
 export function inputValue(value){
-    let data = (value == null) ? 'Not entered' : value;
+    let data = (!value) ? 'Not entered' : value;
     return data;
 }
 

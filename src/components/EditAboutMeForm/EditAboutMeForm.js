@@ -31,8 +31,32 @@ export default class EditAboutMeForm extends React.Component {
         this.setState({updatedFields: {title: e.target.value}})
     }
 
+    handleChangeCity = e =>{
+        this.setState({updatedFields: {city: e.target.value}})
+    }
+
+    handleChangeState = e =>{
+        this.setState({updatedFields: {state: e.target.value}})
+    }
+
+    handleChangeZip = e =>{
+        this.setState({updatedFields: {zip: e.target.value}})
+    }
+
+    handleChangeOffice = e =>{
+        this.setState({updatedFields: {office: e.target.value}})
+    }
+
     handleChangeExperience = e =>{
         this.setState({updatedFields: {experience: e.target.value}})
+    }
+
+    handleChangeBrokerage = e =>{
+        this.setState({updatedFields: {brokerage: e.target.value}})
+    }
+
+    handleChangeSlogan = e =>{
+        this.setState({updatedFields: {slogan: e.target.value}})
     }
 
     handleChangeBio = e =>{
@@ -59,7 +83,13 @@ export default class EditAboutMeForm extends React.Component {
             agent_phone: newFields.agent_phone || '',
             agent_phone_type: newFields.agent_phone_type || '',
             title: newFields.title || '',
+            city: newFields.city || '',
+            state: newFields.state || '',
+            zip: newFields.zip || '',
+            office: newFields.office || '',
             experience: newFields.experience || '',
+            brokerage: newFields.brokerage || '',
+            slogan: newFields.slogan || '',
             bio: newFields.bio || '',
         })
     }
@@ -125,6 +155,46 @@ export default class EditAboutMeForm extends React.Component {
                                 onChange={this.handleChangeTitle}
                             />
                         </div>
+                        <div className="newCity-container flexbox-between editFormSpacing">
+                            <label htmlFor="newCity">City</label>
+                            <input 
+                                type="text" 
+                                name="newCity" 
+                                id="newCity" 
+                                defaultValue={this.props.agent.city}
+                                onChange={this.handleChangeCity}
+                            />
+                        </div>
+                        <div className="newState-container flexbox-between editFormSpacing">
+                            <label htmlFor="newState">State</label>
+                            <input 
+                                type="text" 
+                                name="newState" 
+                                id="newState" 
+                                defaultValue={this.props.agent.state}
+                                onChange={this.handleChangeState}
+                            />
+                        </div>
+                        <div className="newZip-container flexbox-between editFormSpacing">
+                            <label htmlFor="newZip">Zip</label>
+                            <input 
+                                type="text" 
+                                name="newZip" 
+                                id="newZip" 
+                                defaultValue={this.props.agent.zip}
+                                onChange={this.handleChangeZip}
+                            />
+                        </div>
+                        <div className="newOffice-container flexbox-between editFormSpacing">
+                            <label htmlFor="newOffice">Office</label>
+                            <input 
+                                type="text" 
+                                name="newOffice" 
+                                id="newOffice" 
+                                defaultValue={this.props.agent.office}
+                                onChange={this.handleChangeOffice}
+                            />
+                        </div>
                         <div className="newExperience-container flexbox-between editFormSpacing">
                             <label htmlFor="newExperience">Experience</label>
                             <div>
@@ -138,6 +208,26 @@ export default class EditAboutMeForm extends React.Component {
                             />
                             <span>years</span>
                             </div>
+                        </div>
+                        <div className="newBrokerage-container flexbox-between editFormSpacing">
+                            <label htmlFor="newBrokerage">Brokerage</label>
+                            <input 
+                                type="text" 
+                                name="newBrokerage" 
+                                id="newBrokerage" 
+                                defaultValue={this.props.agent.brokerage} 
+                                onChange={this.handleChangeBrokerage}
+                            />
+                        </div>
+                        <div className="newSlogan-container flexbox-between editFormSpacing">
+                            <label htmlFor="newSlogan">Slogan</label>
+                            <input 
+                                type="text" 
+                                name="newSlogan" 
+                                id="newSlogan" 
+                                defaultValue={this.props.agent.slogan} 
+                                onChange={this.handleChangeSlogan}
+                            />
                         </div>
                         <div className="newBio-container flexbox-between editFormSpacing">
                             <label htmlFor="newBio">Bio</label>

@@ -5,7 +5,6 @@ import './UpdateProfilePage.css';
 import DashboardHeader from '../../components/DashboardHeader/DashboardHeader';
 import ProfileImgSection from '../../components/ProfileImgSection/ProfileImgSection';
 import ProfileAboutMeSection from '../../components/ProfileAboutMeSection/ProfileAboutMeSection';
-import ProfileExpertiseSection from '../../components/ProfileExpertiseSection/ProfileExpertiseSection';
 import AgentContext from '../../contexts/AgentContext';
 import AgentApiService from '../../services/agents-api-service';
 
@@ -29,9 +28,6 @@ export default class UpdateProfilePage extends React.Component{
                 <ProfileImgSection agent={agent} />
                 <div className="agentProfile-container">
                     <ProfileAboutMeSection agent={agent} />
-                    <div className='additionalInfo-container'>
-                        <ProfileExpertiseSection />
-                    </div>
                 </div>
             </main>
         )

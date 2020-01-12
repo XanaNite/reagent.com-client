@@ -9,6 +9,7 @@ import DATA from '../../ratingsData'
 import AgentDashboard from '../../routes/AgentDashboard/AgentDashboard';
 import EditProfile from '../../routes/EditProfile/EditProfile';
 import UpdateProfilePage from '../../routes/UpdateProfilePage/UpdateProfilePage'
+import PrivateRoute from '../Utils/PrivateRoute'
 
 class App extends React.Component{
   render(){
@@ -21,9 +22,9 @@ class App extends React.Component{
           <Route path={'/agent/:agent_id'} component={AgentProfile} />
           <Route path={'/login'} component={LoginPage} />
           <Route path={'/register'} component={RegistrationPage} />
-          <Route path={'/dashboard'} render={() => <AgentDashboard agentInfo={agent} />} />
-          <Route path={'/myprofile'} render={() => <UpdateProfilePage agentInfo={agent} />} />
-          <Route path={'/editprofile'} component={EditProfile} />
+          <PrivateRoute path={'/dashboard'} component={AgentDashboard} />
+          <PrivateRoute path={'/myprofile'} component={UpdateProfilePage} />
+          <PrivateRoute path={'/editprofile'} component={EditProfile} />
         </Switch>
       </div>
     );

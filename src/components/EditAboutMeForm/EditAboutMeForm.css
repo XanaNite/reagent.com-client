@@ -3,13 +3,14 @@
 }
 
 .editForm-container input[type=text]{
-    width: 200px;
+    width: 150px;
     height: 25px;
 }
 
 .editForm-container input[type=number]{
     width: 40px;
     height: 25px;
+    padding: 2px;
 }
 
 .editForm-container span{
@@ -17,7 +18,7 @@
 }
 
 .editForm-container textarea{
-    width: 200px;
+    width: 150px;
     height: 100px;
 }
 

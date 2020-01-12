@@ -17,7 +17,7 @@ export default class LandingPage extends React.Component{
 
     renderAgents(){
         const {agentList = []} = this.context
-        console.log(agentList)
+
         return agentList.map(agent =>
             <AgentList
                 key={agent.id}

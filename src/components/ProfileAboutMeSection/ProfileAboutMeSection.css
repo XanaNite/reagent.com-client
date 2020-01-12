@@ -1,0 +1,20 @@
+.agentLocation h4{
+    margin-bottom: 0;
+}
+
+.agentLocation h5{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.aboutMe-section p{
+    margin: 0;
+}
+
+.location-group{
+    margin-left: 20px;
+}
+
+.editProfile-link{
+    margin-top: 25px;
+}

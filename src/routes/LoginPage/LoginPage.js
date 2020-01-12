@@ -31,6 +31,11 @@ export default class LoginPage extends React.Component{
                             <p>Log in to your professional dashboard account to enhance your listings, manage ratings, reviews and recommendations, send reports to clients, and much more.</p>
                         </div>
                         <LoginForm onLoginSuccess={this.handleLoginSuccess} />
+                        <p>
+                            Demo User: <br />
+                            email: user1@test.com <br />
+                            password: Password1!
+                        </p>
                         <p className="signIn-link">Don't have an account? <Link to='/register'>Sign Up</Link></p>
                     </section>
                 </div>

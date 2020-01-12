@@ -19,7 +19,7 @@ export default class  AgentProfile extends React.Component{
 
     componentDidMount(){
         const agentId = this.props.match.params.agent_id
-        console.log(agentId)
+
         this.context.clearError()
         AgentApiService.getAgent(agentId)
             .then(this.context.setAgent)
