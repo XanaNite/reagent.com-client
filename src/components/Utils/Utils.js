@@ -1,5 +1,3 @@
-
-
 export function inputValue(value){
     let data = (!value) ? 'Not entered' : value;
     return data;

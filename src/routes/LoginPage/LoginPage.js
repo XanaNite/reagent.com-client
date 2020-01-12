@@ -1,5 +1,3 @@
-/*jshint esversion: 6 */
-
 import React from 'react';
 import {Link} from 'react-router-dom';
 import LoginHeader from '../../components/LoginHeader/LoginHeader';

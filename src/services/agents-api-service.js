@@ -1,6 +1,3 @@
-/*jshint esversion: 6 */
-
-import TokenService from './token-service';
 import config from '../config';
 
 const AgentApiService = {
