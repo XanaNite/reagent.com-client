@@ -12,7 +12,7 @@ export default function AgentImgSection(props){
                 </div>
                 <div className="profileBanner-name">
                     <h2>
-                        {props.agent.first_name} {props.agent.last_name}, {props.agent.title} &#8226; {props.agent.city}, {props.agent.state}
+                        {props.first_name} {props.last_name}, {props.title} &#8226; {props.city}, {props.state}
                     </h2>
                 </div>
             </div>

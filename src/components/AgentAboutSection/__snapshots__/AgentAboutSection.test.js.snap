@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AgentAboutSection component renders AgentAboutSection by default 1`] = `
+<div
+  className="agentInfo-about"
+>
+  <h3>
+    About 
+     
+     with 
+  </h3>
+  <div
+    className="about-container"
+  >
+    <p
+      id="agentBio"
+    >
+      Not entered
+    </p>
+    <div
+      className="aboutDetails-container"
+    >
+      <p>
+        Experience: 
+        Not entered
+         years
+      </p>
+      <p>
+        Brokerage: 
+        Not entered
+      </p>
+      <p>
+        Slogan: 
+        Not entered
+      </p>
+    </div>
+  </div>
+  <div
+    className="agentInfo-contact"
+  >
+    <h4>
+      Contact Me
+    </h4>
+    <p>
+      Phone: 
+       
+    </p>
+    <p>
+      Email: 
+    </p>
+  </div>
+</div>
+`;
+
+exports[`AgentAboutSection component renders AgentAboutSection given props 1`] = `
+<div
+  className="agentInfo-about"
+>
+  <h3>
+    About 
+     
+     with 
+  </h3>
+  <div
+    className="about-container"
+  >
+    <p
+      id="agentBio"
+    >
+      Not entered
+    </p>
+    <div
+      className="aboutDetails-container"
+    >
+      <p>
+        Experience: 
+        Not entered
+         years
+      </p>
+      <p>
+        Brokerage: 
+        Not entered
+      </p>
+      <p>
+        Slogan: 
+        Not entered
+      </p>
+    </div>
+  </div>
+  <div
+    className="agentInfo-contact"
+  >
+    <h4>
+      Contact Me
+    </h4>
+    <p>
+      Phone: 
+       
+    </p>
+    <p>
+      Email: 
+    </p>
+  </div>
+</div>
+`;
