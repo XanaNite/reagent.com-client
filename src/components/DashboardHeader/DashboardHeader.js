@@ -1,15 +1,16 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faUser } from '@fortawesome/free-solid-svg-icons'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 import './DashboardHeader.css'
+import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
 
 export default function DashboardHeader(){
     return(
         <header role="banner" className='dashboardHeader'>
             <nav role="navigation" className="flexbox-between">
                 <div className="hamburgerMenu">
-                    <Link to='/dashboard'><FontAwesomeIcon icon={faBars} /></Link>
+                    <HamburgerMenu />
                 </div>
                 <div className="dashboard-title">
                     <h1><Link to='/'>REagent.com</Link></h1>
@@ -20,5 +21,5 @@ export default function DashboardHeader(){
                 </div>
             </nav>
         </header>
-    )
+    );
 }

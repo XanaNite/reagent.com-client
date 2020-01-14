@@ -3,7 +3,8 @@
 }
 
 .hamburgerMenu{
-    font-size: 30px;
+    size: 30px;
+    margin-right: 15px;
 }
 
 .dashboard-title h1{

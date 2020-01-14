@@ -18,6 +18,14 @@
     border-bottom: 1px solid lightgray;
 }
 
+.AgentListInfo-container{
+    width: 150px;
+}
+
+.AgentListInfo-container p{
+    font-size: 12px;
+}
+
 .AgentListSlogan{
     font-size: 14px;
     text-align: center;

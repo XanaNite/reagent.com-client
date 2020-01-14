@@ -51,16 +51,12 @@ export default class LoginForm extends React.Component {
                         <input type="text" name="agent_email" id="agent_email" />
                     </div>
                 </div>
-                <p>Forgot email?</p>
                 <div className="login-input">
                     <label htmlFor="password">Password</label>
                     <div>
                         <input type="password" name="password" id="password" />
                     </div>
                 </div>
-                <p>Forgot password?</p>
-                <input type="checkbox" name="rememberMe" id="rememberMe" />
-                <label htmlFor="rememberMe">Remember me</label>
                 <div className="login-button">
                     <button type='submit'>Log in</button>
                 </div>
