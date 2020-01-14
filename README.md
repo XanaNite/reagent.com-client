@@ -20,7 +20,7 @@ HTML/CSS/JavaScript/React/JSX/Git/NPM
 ### Fullscreen
 Homepage:
 
-![Fullscreen Homepage](https://github.com/cophaso/pawprint-app/blob/master/README-img/fullscreen-homepage.png)
+![Fullscreen Homepage](https://github.com/XanaNite/reagent.com-client/blob/master/README-img/reagentFullscreenHomepage.png)
 
 ### Mobile
 Homepage:
