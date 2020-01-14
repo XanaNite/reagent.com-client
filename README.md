@@ -4,7 +4,7 @@ This app is a real estate agent's dashboard that will be editable and supply inf
 
 Live: 
 client: https://reagent.now.sh/
-server: 
+server: https://aqueous-lake-82914.herokuapp.com/
 
 Server Repo: https://github.com/XanaNite/reagent-server
 
@@ -19,6 +19,8 @@ HTML/CSS/JavaScript/React/JSX/Git/NPM
 ## App Screenshots
 ### Fullscreen
 Homepage:
+
+![Fullscreen Homepage](https://github.com/cophaso/pawprint-app/blob/master/README-img/fullscreen-homepage.png)
 
 ### Mobile
 Homepage:
