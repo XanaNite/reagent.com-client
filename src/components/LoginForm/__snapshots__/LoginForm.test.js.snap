@@ -24,9 +24,6 @@ exports[`LoginForm component renders the LoginForm given props 1`] = `
       />
     </div>
   </div>
-  <p>
-    Forgot email?
-  </p>
   <div
     className="login-input"
   >
@@ -43,19 +40,6 @@ exports[`LoginForm component renders the LoginForm given props 1`] = `
       />
     </div>
   </div>
-  <p>
-    Forgot password?
-  </p>
-  <input
-    id="rememberMe"
-    name="rememberMe"
-    type="checkbox"
-  />
-  <label
-    htmlFor="rememberMe"
-  >
-    Remember me
-  </label>
   <div
     className="login-button"
   >
