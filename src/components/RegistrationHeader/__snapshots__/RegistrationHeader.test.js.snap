@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegistrationHeader component renders the RegistrationHeader given props 1`] = `
+<header
+  className="regHeader"
+  role="banner"
+>
+  <nav
+    role="navigation"
+  >
+    <Link
+      to="/login"
+    >
+      Log In
+    </Link>
+  </nav>
+  <div
+    className="signIn-title"
+  >
+    <h1>
+      <Link
+        to="/"
+      >
+        REagent.com
+      </Link>
+    </h1>
+    <span>
+      for Professionals
+    </span>
+  </div>
+</header>
+`;

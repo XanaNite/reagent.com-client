@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileAboutMeSection component renders the ProfileAboutMeSection given props 1`] = `
+<section
+  className="aboutMe-section profileMain-section"
+>
+  <div
+    className="aboutMe-container"
+  >
+    <h3>
+      About Me
+    </h3>
+    <div
+      className="aboutMe-name"
+    >
+      <h4>
+        Name
+      </h4>
+      <p>
+        test
+         
+        test
+      </p>
+    </div>
+    <div
+      className="aboutMe-contact"
+    >
+      <h4>
+        Phone number
+      </h4>
+      <p>
+         
+      </p>
+      <h4>
+        Contact email address
+      </h4>
+      <p />
+    </div>
+    <div
+      className="aboutMe-proDetails"
+    >
+      <h4>
+        Professional title
+      </h4>
+      <p>
+        test
+      </p>
+      <h4>
+        Years of experience
+      </h4>
+      <p>
+        Not entered
+      </p>
+      <h4>
+        Brokerage
+      </h4>
+      <p>
+        Not entered
+      </p>
+      <h4>
+        Office
+      </h4>
+      <p>
+        Not entered
+      </p>
+      <div
+        className="agentLocation"
+      >
+        <h4>
+          Location
+        </h4>
+        <div
+          className="location-group"
+        >
+          <h5>
+            City
+          </h5>
+          <p>
+            test
+          </p>
+          <h5>
+            State
+          </h5>
+          <p>
+            test
+          </p>
+          <h5>
+            Zip
+          </h5>
+          <p>
+            Not entered
+          </p>
+        </div>
+      </div>
+      <h4>
+        Slogan
+      </h4>
+      <p>
+        Not entered
+      </p>
+      <h4>
+        Bio
+      </h4>
+      <p>
+        Not entered
+      </p>
+    </div>
+    <div
+      className="editProfile-link"
+    >
+      <Link
+        to="/editprofile"
+      >
+        Edit
+      </Link>
+    </div>
+  </div>
+</section>
+`;

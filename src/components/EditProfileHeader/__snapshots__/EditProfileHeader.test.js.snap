@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditProfileHeader component renders the EditProfileHeader given props 1`] = `
+<header
+  className="sectionBorders"
+  role="banner"
+>
+  <div
+    className="EditProfileHeader-nav flexbox-between"
+  >
+    <h1>
+      test
+       
+      test
+    </h1>
+    <nav
+      role="navigation"
+    >
+      <Link
+        to="/myprofile"
+      >
+        X
+      </Link>
+    </nav>
+  </div>
+</header>
+`;

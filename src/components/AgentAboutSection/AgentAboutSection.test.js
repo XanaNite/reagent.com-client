@@ -7,13 +7,15 @@ describe(`AgentAboutSection component`, () => {
   const props = {
     className: 'test-class-name',
     children: <p>test children</p>,
-    'data-other': 'test-other-prop'
+    'data-other': 'test-other-prop',
+    agent: {
+        first_name: "test",
+        last_name: "test",
+        title: "test",
+        city: "test",
+        state: "test"
+    }
   };
-
-  it('renders AgentAboutSection by default', () => {
-    const wrapper = shallow(<AgentAboutSection />)
-    expect(toJson(wrapper)).toMatchSnapshot()
-  });
 
   it('renders AgentAboutSection given props', () => {
     const wrapper = shallow(<AgentAboutSection {...props} />)

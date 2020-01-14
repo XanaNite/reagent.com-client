@@ -1,14 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AgentImgSection component renders the AgentList given props 1`] = `
+exports[`ProfileImgSection component renders the ProfileImgSection given props 1`] = `
 <section
-  className="agentProfile-section"
+  className="updateProfileBanner-section"
 >
+  <Link
+    to="/agent/1"
+  >
+    View Profile
+  </Link>
   <div
-    className="profileBanner"
+    className="updateProfileBanner"
   >
     <div
-      className="profileBanner-img"
+      className="updateProfileBanner-img"
     >
       <FontAwesomeIcon
         border={false}
@@ -43,17 +48,11 @@ exports[`AgentImgSection component renders the AgentList given props 1`] = `
       />
     </div>
     <div
-      className="profileBanner-name"
+      className="updateProfileBanner-name"
     >
       <h2>
         test
          
-        test
-        , 
-        test
-         • 
-        test
-        , 
         test
       </h2>
     </div>

@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm component renders the LoginForm given props 1`] = `
+<form
+  className="login-form"
+  onSubmit={[Function]}
+>
+  <div
+    role="alert"
+  />
+  <div
+    className="login-input"
+  >
+    <label
+      htmlFor="agent_email"
+    >
+      Email address
+    </label>
+    <div>
+      <input
+        id="agent_email"
+        name="agent_email"
+        type="text"
+      />
+    </div>
+  </div>
+  <p>
+    Forgot email?
+  </p>
+  <div
+    className="login-input"
+  >
+    <label
+      htmlFor="password"
+    >
+      Password
+    </label>
+    <div>
+      <input
+        id="password"
+        name="password"
+        type="password"
+      />
+    </div>
+  </div>
+  <p>
+    Forgot password?
+  </p>
+  <input
+    id="rememberMe"
+    name="rememberMe"
+    type="checkbox"
+  />
+  <label
+    htmlFor="rememberMe"
+  >
+    Remember me
+  </label>
+  <div
+    className="login-button"
+  >
+    <button
+      type="submit"
+    >
+      Log in
+    </button>
+  </div>
+</form>
+`;

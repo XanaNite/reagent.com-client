@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegistrationForm component renders the RegistrationForm given props 1`] = `
+<form
+  className="register-form"
+  onSubmit={[Function]}
+>
+  <div
+    role="alert"
+  />
+  <div
+    className="register-input"
+  >
+    <label
+      htmlFor="agent_email"
+    >
+      Email address
+    </label>
+    <div>
+      <input
+        id="agent_email"
+        name="agent_email"
+        type="text"
+      />
+    </div>
+  </div>
+  <div
+    className="register-input"
+  >
+    <label
+      htmlFor="password"
+    >
+      Password
+    </label>
+    <div>
+      <input
+        id="password"
+        name="password"
+        type="password"
+      />
+    </div>
+  </div>
+  <div
+    className="register-input"
+  >
+    <label
+      htmlFor="first_name"
+    >
+      First Name
+    </label>
+    <div>
+      <input
+        id="first_name"
+        name="first_name"
+        type="text"
+      />
+    </div>
+  </div>
+  <div
+    className="register-input"
+  >
+    <label
+      htmlFor="last_name"
+    >
+      Last Name
+    </label>
+    <div>
+      <input
+        id="last_name"
+        name="last_name"
+        type="text"
+      />
+    </div>
+  </div>
+  <div
+    className="register-input"
+  >
+    <label
+      htmlFor="agent_phone"
+    >
+      Phone number
+    </label>
+    <div>
+      <input
+        id="agent_phone"
+        name="agent_phone"
+        type="text"
+      />
+    </div>
+  </div>
+  <div
+    className="register-button"
+  >
+    <button
+      type="submit"
+    >
+      Next Step
+    </button>
+  </div>
+</form>
+`;

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginHeader component renders the LoginHeader given props 1`] = `
+<header
+  className="loginHeader"
+  role="banner"
+>
+  <nav
+    role="navigation"
+  >
+    <Link
+      to="/register"
+    >
+      Sign Up
+    </Link>
+  </nav>
+  <div
+    className="signIn-title"
+  >
+    <h1>
+      <Link
+        to="/"
+      >
+        REagent.com
+      </Link>
+    </h1>
+    <span>
+      for Professionals
+    </span>
+  </div>
+</header>
+`;

@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditAboutMeForm component renders the EditAboutMeForm given props 1`] = `
+<div
+  className="editAboutMe-container sectionBorders"
+>
+  <form
+    className="editAboutMe-form"
+    onSubmit={[Function]}
+  >
+    <h3>
+      Update Your Profile
+    </h3>
+    <div
+      className="editForm-container"
+    >
+      <div
+        className="editForm__error"
+        role="alert"
+      />
+      <div
+        className="newFirstName-container flexbox-between editFormSpacing"
+      >
+        <label
+          htmlFor="newFirstName"
+        >
+          First name
+        </label>
+        <input
+          defaultValue="test"
+          id="newFirstName"
+          name="newFirstName"
+          onChange={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="newLastName-container flexbox-between editFormSpacing"
+      >
+        <label
+          htmlFor="newLastName"
+        >
+          Last name
+        </label>
+        <input
+          defaultValue="test"
+          id="newLastName"
+          name="newLastName"
+          onChange={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="newPhone-container editFormSpacing"
+      >
+        <div
+          className="flexbox-between"
+        >
+          <label
+            htmlFor="newPhone"
+          >
+            Phone number
+          </label>
+          <input
+            id="newPhone"
+            name="newPhone"
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+        <div
+          className="phoneType-container"
+        >
+          <select
+            id="phoneType"
+            name="phoneType"
+            onChange={[Function]}
+          >
+            <option
+              value="home"
+            >
+              home
+            </option>
+            <option
+              value="mobile"
+            >
+              mobile
+            </option>
+            <option
+              value="business"
+            >
+              business
+            </option>
+            <option
+              value="fax"
+            >
+              fax
+            </option>
+          </select>
+        </div>
+      </div>
+      <div
+        className="newTitle-container flexbox-between editFormSpacing"
+      >
+        <label
+          htmlFor="newTitle"
+        >
+          Professional title
+        </label>
+        <input
+          defaultValue="test"
+          id="newTitle"
+          name="newTitle"
+          onChange={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="newCity-container flexbox-between editFormSpacing"
+      >
+        <label
+          htmlFor="newCity"
+        >
+          City
+        </label>
+        <input
+          defaultValue="test"
+          id="newCity"
+          name="newCity"
+          onChange={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="newState-container flexbox-between editFormSpacing"
+      >
+        <label
+          htmlFor="newState"
+        >
+          State
+        </label>
+        <input
+          defaultValue="test"
+          id="newState"
+          name="newState"
+          onChange={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="newZip-container flexbox-between editFormSpacing"
+      >
+        <label
+          htmlFor="newZip"
+        >
+          Zip
+        </label>
+        <input
+          id="newZip"
+          name="newZip"
+          onChange={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="newOffice-container flexbox-between editFormSpacing"
+      >
+        <label
+          htmlFor="newOffice"
+        >
+          Office
+        </label>
+        <input
+          id="newOffice"
+          name="newOffice"
+          onChange={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="newExperience-container flexbox-between editFormSpacing"
+      >
+        <label
+          htmlFor="newExperience"
+        >
+          Experience
+        </label>
+        <div>
+          <input
+            id="newExperience"
+            max="75"
+            name="newExperience"
+            onChange={[Function]}
+            type="number"
+          />
+          <span>
+            years
+          </span>
+        </div>
+      </div>
+      <div
+        className="newBrokerage-container flexbox-between editFormSpacing"
+      >
+        <label
+          htmlFor="newBrokerage"
+        >
+          Brokerage
+        </label>
+        <input
+          id="newBrokerage"
+          name="newBrokerage"
+          onChange={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="newSlogan-container flexbox-between editFormSpacing"
+      >
+        <label
+          htmlFor="newSlogan"
+        >
+          Slogan
+        </label>
+        <input
+          id="newSlogan"
+          name="newSlogan"
+          onChange={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="newBio-container flexbox-between editFormSpacing"
+      >
+        <label
+          htmlFor="newBio"
+        >
+          Bio
+        </label>
+        <textarea
+          id="newBio"
+          name="newBio"
+          onChange={[Function]}
+        />
+      </div>
+    </div>
+    <div
+      className="editForm-button"
+    >
+      <button
+        type="submit"
+      >
+        Update
+      </button>
+    </div>
+  </form>
+</div>
+`;
