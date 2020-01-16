@@ -32,6 +32,10 @@ export default class LandingPage extends React.Component{
         return (
             <main className='LandingPage-main'>
                 <Header />
+                <section className="LandingPage-intro">
+                    <h2>To discover more information about an professional real estate agent, please select one below.</h2>
+                    <div className="intro-img"></div>
+                </section>
                 <section className='agentList-section'>
                     <h2>Agents</h2>
                     <div className='agentList-card flexbox-around'>

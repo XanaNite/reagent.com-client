@@ -13,7 +13,7 @@
     margin-top: 5px;
 }
 
-@media screen and (min-width: 490px){
+@media screen and (min-width: 490px) and (max-width: 760px){
     .profileMain-section{
         width: 320px;
     }

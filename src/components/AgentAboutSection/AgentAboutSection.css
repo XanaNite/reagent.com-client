@@ -1,4 +1,4 @@
-@media screen and (min-width: 490px){
+@media screen and (min-width: 490px) and (max-width: 768px){
     .about-container{
         display: flex;
         justify-content: space-between;
@@ -15,7 +15,13 @@
     }
 }
 
-@media screen and (min-width: 1050px){
+@media screen and (min-width: 770px){
+    .about-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
     #agentBio{
         width: 45%;
     }

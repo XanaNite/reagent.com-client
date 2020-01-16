@@ -8,13 +8,34 @@
     text-align: center;
     background: rgb(238, 214, 163) url("../../images/placeholderBackground.jpg") no-repeat center;
     background-size: contain;
+    color: white;
 }
 
 .updateProfileBanner-img{
-    font-size: 100px;
-    padding-top: 110px;
+    font-size: 80px;
+    padding-top: 100px;
 }
 
-.updateProfileBanner-name{
-    padding-top: 10px;
+.updateProfileBanner-name h2{
+    margin: 0px;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 760px){
+    .updateProfileBanner-section{
+        height: 450px;
+    }
+
+    .updateProfileBanner{
+        height: 400px;
+    }
+
+    .updateProfileBanner-img{
+        font-size: 100px;
+        padding-top: 200px;
+    }
+
+    .updateProfileBanner-name h2{
+        font-size: 26px;
+    }
 }

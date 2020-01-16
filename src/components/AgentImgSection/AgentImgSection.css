@@ -3,10 +3,13 @@
     height: 250px;
     background: rgb(238, 214, 163) url("../../images/placeholderBackground.jpg") no-repeat center;
     background-size: contain;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    text-align: center;
     color: white;
+}
+
+.profileBanner-group{
+    display: inline-block;
+    margin-top: 35px;
 }
 
 .profileBanner-img{
@@ -15,7 +18,6 @@
 }
 
 .profileBanner-name h2{
-    margin: 0px 10px;
     font-size: 14px;
 }
 
@@ -32,7 +34,6 @@
 
     .profileBanner-img{
         font-size: 150px;
-        margin-right: 0;
     }
 
     .profileBanner-name h2{
@@ -41,8 +42,16 @@
     }
 }
 
-@media screen and (min-width: 1050px){
+@media screen and (min-width: 760px){
     .profileBanner{
         height: 500px;
+    }
+
+    .profileBanner-group{
+        margin-top: 190px;
+    }
+
+    .profileBanner-name h2{
+        font-size: 24px;
     }
 }

@@ -1,3 +1,14 @@
+.LandingPage-intro h2{
+    font-size: 16px;
+}
+
+.intro-img{
+    width: 100%;
+    height: 150px;
+    background: whitesmoke url("../../images/placeholderSearchBackground.jpg") no-repeat center;
+    background-size: contain;
+}
+
 .agentList-section{
     margin-bottom: 10px;
     border-bottom: 1px solid lightgray;
@@ -9,4 +20,24 @@
 
 .listings-section{
     margin: 25px;
+}
+
+@media screen and (min-width: 760px){
+    .LandingPage-intro h2{
+        font-size: 24px;
+    }
+
+    .intro-img{
+        height: 250px;
+    }
+
+    .LandingPage-intro{
+        margin: 50px;
+    }
+}
+
+@media screen and (min-width: 1050px){
+    .LandingPage-intro{
+        margin: 50px 150px;
+    }
 }

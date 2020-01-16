@@ -1,8 +1,8 @@
-.agentLocation h4{
+.proDetails-location h4{
     margin-bottom: 0;
 }
 
-.agentLocation h5{
+.proDetails-location h5{
     margin-top: 5px;
     margin-bottom: 0;
 }
@@ -17,4 +17,16 @@
 
 .editProfile-link{
     margin-top: 25px;
+}
+
+@media screen and (min-width: 1020px){
+    .aboutMe-flex{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .proDetails-container{
+        width: 300px;
+    }
 }

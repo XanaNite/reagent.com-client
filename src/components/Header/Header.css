@@ -10,6 +10,11 @@
     text-align: right;
 }
 
+.headerSection p{
+    font-size: 11px;
+    margin: 3px;
+}
+
 .headerSection span{
     padding-left: 20px;
 }
@@ -18,4 +23,11 @@
     color: seashell;
     text-decoration: none;
     margin-right: 5px;
+}
+
+@media screen and (min-width: 760px){
+    .headerSection p{
+        font-size: 15px;
+        margin: 5px;
+    }
 }

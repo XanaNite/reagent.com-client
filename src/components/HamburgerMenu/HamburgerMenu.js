@@ -9,7 +9,7 @@ export default props => {
             <ul>
                 <li><Link to='/' className='bugerLink'>REagent Home</Link></li>
                 <li><Link to='/dashboard' className='bugerLink'>Dashboard Home</Link></li>
-                <li><Link to='/yourprofile' className='bugerLink'>Your Profile</Link></li>
+                <li><Link to='/myprofile' className='bugerLink'>Update Your Profile</Link></li>
             </ul>
         </Menu>
     );

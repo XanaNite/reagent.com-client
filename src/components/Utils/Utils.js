@@ -3,6 +3,11 @@ export function inputValue(value){
     return data;
 }
 
+export function inputSlogan(value){
+    let data = (!value) ? null : `"${value}"`;
+    return data;
+}
+
 export function multipleInputValues(value){
     let data = value.join(', ')
     return data;

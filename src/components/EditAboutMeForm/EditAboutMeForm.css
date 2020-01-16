@@ -1,3 +1,8 @@
+.editAboutMe-container form{
+    padding: 10px;
+    background-color: rgb(241, 247, 251);
+}
+
 .editFormSpacing{
     margin: 5px;
 }
@@ -18,7 +23,7 @@
 }
 
 .editForm-container textarea{
-    width: 150px;
+    width: 250px;
     height: 100px;
 }
 
@@ -40,4 +45,21 @@
     height: 40px;
     font-size: 16px;
     margin: 25px;
+}
+
+@media screen and (min-width: 770px){
+    .editAboutMe-container{
+        width: 720px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .editForm-container input[type=text]{
+        width: 250px;
+    }
+
+    .editForm-container textarea{
+        width: 350px;
+        height: 100px;
+    }
 }

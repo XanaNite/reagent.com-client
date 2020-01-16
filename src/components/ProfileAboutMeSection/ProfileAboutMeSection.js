@@ -18,16 +18,28 @@ export default function ProfileAboutMeSection(props){
                     <h4>Contact email address</h4>
                     <p>{props.agent.agent_email}</p>
                 </div>
-                <div className="aboutMe-proDetails">
-                    <h4>Professional title</h4>
-                    <p>{inputValue(props.agent.title)}</p>
-                    <h4>Years of experience</h4>
-                    <p>{inputValue(props.agent.experience)}</p>
-                    <h4>Brokerage</h4>
-                    <p>{inputValue(props.agent.brokerage)}</p>
-                    <h4>Office</h4>
-                    <p>{inputValue(props.agent.office)}</p>
-                    <div className="agentLocation">
+                <div className="aboutMe-proDetails aboutMe-flex">
+                    <div className="proDetails-title proDetails-container">
+                        <h4>Professional title</h4>
+                        <p>{inputValue(props.agent.title)}</p>
+                    </div>
+                    <div className="proDetails-experience proDetails-container">
+                        <h4>Years of experience</h4>
+                        <p>{inputValue(props.agent.experience)}</p>
+                    </div>
+                    <div className="proDetails-brokerage proDetails-container">
+                        <h4>Brokerage</h4>
+                        <p>{inputValue(props.agent.brokerage)}</p>
+                    </div>
+                    <div className="proDetails-office proDetails-container">
+                        <h4>Office</h4>
+                        <p>{inputValue(props.agent.office)}</p>
+                    </div>
+                    <div className="proDetails-slogan proDetails-container">
+                        <h4>Slogan</h4>
+                        <p>{inputValue(props.agent.slogan)}</p>
+                    </div>
+                    <div className="proDetails-location proDetails-container">
                         <h4>Location</h4>
                         <div className="location-group">
                             <h5>City</h5>
@@ -38,10 +50,10 @@ export default function ProfileAboutMeSection(props){
                             <p>{inputValue(props.agent.zip)}</p>
                         </div>
                     </div>
-                    <h4>Slogan</h4>
-                    <p>{inputValue(props.agent.slogan)}</p>
-                    <h4>Bio</h4>
-                    <p>{inputValue(props.agent.bio)}</p>
+                    <div className="proDetails-bio">
+                        <h4>Bio</h4>
+                        <p>{inputValue(props.agent.bio)}</p>
+                    </div>
                 </div>
                 <div className="editProfile-link">
                     <Link to='/editprofile'>Edit</Link>

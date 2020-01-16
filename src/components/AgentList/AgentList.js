@@ -1,8 +1,9 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
-import './AgentList.css'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import './AgentList.css';
+import {inputSlogan} from '../Utils/Utils';
 
 export default function AgentList(props){
     return(
@@ -16,7 +17,7 @@ export default function AgentList(props){
                     <p>{props.agent.office}</p>
                 </div>
             </div>
-            <p className='AgentListSlogan'>"{props.agent.slogan}"</p>
+            <p className='AgentListSlogan'>{inputSlogan(props.agent.slogan)}</p>
         </div>
     )
 }
