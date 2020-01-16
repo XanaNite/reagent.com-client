@@ -46,9 +46,9 @@ exports[`HamburgerMenu component renders a form.HamburgerMenu by default 1`] = `
     <li>
       <Link
         className="bugerLink"
-        to="/yourprofile"
+        to="/myprofile"
       >
-        Your Profile
+        Update Your Profile
       </Link>
     </li>
   </ul>
@@ -101,9 +101,9 @@ exports[`HamburgerMenu component renders the HamburgerMenu given props 1`] = `
     <li>
       <Link
         className="bugerLink"
-        to="/yourprofile"
+        to="/myprofile"
       >
-        Your Profile
+        Update Your Profile
       </Link>
     </li>
   </ul>

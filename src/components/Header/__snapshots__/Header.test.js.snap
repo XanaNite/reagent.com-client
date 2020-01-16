@@ -8,12 +8,15 @@ exports[`Header component renders the Header given props 1`] = `
   <nav
     role="navigation"
   >
-    Agent Dashboard: 
+    <p>
+      Please use the following link to access your agent dashboard:
+    </p>
+     
     <span>
       <Link
-        to="/login"
+        to="/dashboard"
       >
-        Log In
+        My Dashboard
       </Link>
     </span>
      

@@ -37,34 +37,60 @@ exports[`ProfileAboutMeSection component renders the ProfileAboutMeSection given
       <p />
     </div>
     <div
-      className="aboutMe-proDetails"
+      className="aboutMe-proDetails aboutMe-flex"
     >
-      <h4>
-        Professional title
-      </h4>
-      <p>
-        test
-      </p>
-      <h4>
-        Years of experience
-      </h4>
-      <p>
-        Not entered
-      </p>
-      <h4>
-        Brokerage
-      </h4>
-      <p>
-        Not entered
-      </p>
-      <h4>
-        Office
-      </h4>
-      <p>
-        Not entered
-      </p>
       <div
-        className="agentLocation"
+        className="proDetails-title proDetails-container"
+      >
+        <h4>
+          Professional title
+        </h4>
+        <p>
+          test
+        </p>
+      </div>
+      <div
+        className="proDetails-experience proDetails-container"
+      >
+        <h4>
+          Years of experience
+        </h4>
+        <p>
+          Not entered
+        </p>
+      </div>
+      <div
+        className="proDetails-brokerage proDetails-container"
+      >
+        <h4>
+          Brokerage
+        </h4>
+        <p>
+          Not entered
+        </p>
+      </div>
+      <div
+        className="proDetails-office proDetails-container"
+      >
+        <h4>
+          Office
+        </h4>
+        <p>
+          Not entered
+        </p>
+      </div>
+      <div
+        className="proDetails-slogan proDetails-container"
+      >
+        <h4>
+          Slogan
+        </h4>
+        <p>
+          Not entered
+        </p>
+      </div>
+      <div
+        className="proDetails-location proDetails-container"
       >
         <h4>
           Location
@@ -92,18 +118,16 @@ exports[`ProfileAboutMeSection component renders the ProfileAboutMeSection given
           </p>
         </div>
       </div>
-      <h4>
-        Slogan
-      </h4>
-      <p>
-        Not entered
-      </p>
-      <h4>
-        Bio
-      </h4>
-      <p>
-        Not entered
-      </p>
+      <div
+        className="proDetails-bio"
+      >
+        <h4>
+          Bio
+        </h4>
+        <p>
+          Not entered
+        </p>
+      </div>
     </div>
     <div
       className="editProfile-link"

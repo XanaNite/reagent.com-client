@@ -63,9 +63,6 @@ exports[`AgentList component renders the AgentList given props 1`] = `
   </div>
   <p
     className="AgentListSlogan"
-  >
-    "
-    "
-  </p>
+  />
 </div>
 `;
