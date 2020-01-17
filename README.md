@@ -27,6 +27,14 @@ Homepage:
 
 ![Mobile Homepage](https://github.com/XanaNite/reagent.com-client/blob/master/README-img/reagentMobileHomepage.png)
 
+Dashboard Homepage:
+
+![Mobile Dashboard Homepage](https://github.com/XanaNite/reagent.com-client/blob/master/README-img/reagentMobileDashboardHomepage.png)
+
+Agent Profile:
+
+![Mobile Agent Profile](https://github.com/XanaNite/reagent.com-client/blob/master/README-img/reagentMobileAgentProfile.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
