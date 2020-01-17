@@ -14,5 +14,5 @@ export default function EditProfileHeader(props){
                 </nav>
             </div>
         </header>
-    )
+    );
 }

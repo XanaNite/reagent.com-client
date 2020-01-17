@@ -1,6 +1,6 @@
-import React from 'react'
-import './AgentAboutSection.css'
-import {inputValue} from '../Utils/Utils'
+import React from 'react';
+import './AgentAboutSection.css';
+import {inputValue} from '../Utils/Utils';
 
 export default function AgentAboutSection(props){
     return (
@@ -22,5 +22,5 @@ export default function AgentAboutSection(props){
                 <p>Email: {props.agent.agent_email}</p>
             </div>
         </div>
-    )
+    );
 }

@@ -1,14 +1,14 @@
-import React from 'react'
-import {Route, Switch} from 'react-router-dom'
-import './App.css'
-import LandingPage from '../../routes/LandingPage/LandingPage'
-import LoginPage from '../../routes/LoginPage/LoginPage'
-import RegistrationPage from '../../routes/RegistrationPage/RegistrationPage'
-import AgentProfile from '../../routes/AgentProfile/AgentProfile'
+import React from 'react';
+import {Route, Switch} from 'react-router-dom';
+import './App.css';
+import LandingPage from '../../routes/LandingPage/LandingPage';
+import LoginPage from '../../routes/LoginPage/LoginPage';
+import RegistrationPage from '../../routes/RegistrationPage/RegistrationPage';
+import AgentProfile from '../../routes/AgentProfile/AgentProfile';
 import AgentDashboard from '../../routes/AgentDashboard/AgentDashboard';
 import EditProfile from '../../routes/EditProfile/EditProfile';
-import UpdateProfilePage from '../../routes/UpdateProfilePage/UpdateProfilePage'
-import PrivateRoute from '../Utils/PrivateRoute'
+import UpdateProfilePage from '../../routes/UpdateProfilePage/UpdateProfilePage';
+import PrivateRoute from '../Utils/PrivateRoute';
 
 class App extends React.Component{
   render(){
@@ -25,7 +25,7 @@ class App extends React.Component{
         </Switch>
       </div>
     );
-  }
+  };
 }
 
 export default App;

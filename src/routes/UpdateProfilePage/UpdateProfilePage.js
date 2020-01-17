@@ -11,11 +11,11 @@ export default class UpdateProfilePage extends React.Component{
 
     componentDidMount(){
         const agentId = localStorage.getItem('user_id');
-        this.context.clearError()
+        this.context.clearError();
         AgentApiService.getAgent(agentId)
             .then(this.context.setAgent)
             .catch(this.context.setError);
-    }
+    };
 
     render(){
         const {agent} = this.context;
@@ -28,6 +28,6 @@ export default class UpdateProfilePage extends React.Component{
                     <ProfileAboutMeSection agent={agent} />
                 </div>
             </main>
-        )
-    }
+        );
+    };
 }

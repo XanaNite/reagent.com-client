@@ -48,5 +48,5 @@ export class AgentProvider extends React.Component{
                 {this.props.children}
             </AgentContext.Provider>
         );
-    }
+    };
 }

@@ -1,8 +1,8 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
-import './DashboardAgentProfile.css'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import './DashboardAgentProfile.css';
 
 export default function DashboardAgentProfile(props){
     return(
@@ -34,5 +34,5 @@ export default function DashboardAgentProfile(props){
             </div>
             <Link to='/myprofile'>Improve your profile</Link>
         </div>
-    )
+    );
 }

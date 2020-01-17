@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 const AgentListContext = React.createContext({
     agentList: [],
@@ -6,28 +6,28 @@ const AgentListContext = React.createContext({
     setError: () => {},
     clearError: () => {},
     setAgentList: () => {},
-})
+});
 
-export default AgentListContext
+export default AgentListContext;
 
 export class AgentListProvider extends Component {
     state = {
         agentList: [],
         error: null,
-    }
+    };
 
     setAgentList = agentList =>{
         this.setState({agentList})
-    }
+    };
 
     setError = error => {
         console.error(error)
         this.setState({error})
-    }
+    };
     
     clearError = () => {
         this.setState({error: null})
-    }
+    };
     
     render() {
         const value = {
@@ -36,12 +36,12 @@ export class AgentListProvider extends Component {
             setError: this.setError,
             clearError: this.clearError,
             setAgentList: this.setAgentList,
-        }
+        };
 
         return (
             <AgentListContext.Provider value={value}>
                 {this.props.children}
             </AgentListContext.Provider>
-        )
-    }
+        );
+    };
 }

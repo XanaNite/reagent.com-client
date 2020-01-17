@@ -1,6 +1,6 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import './LoginHeader.css'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import './LoginHeader.css';
 
 export default function LoginHeader(){
     return(
@@ -13,5 +13,5 @@ export default function LoginHeader(){
                 <span>for Professionals</span>
             </div>
         </header>
-    )
+    );
 }

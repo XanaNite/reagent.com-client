@@ -5,9 +5,9 @@ import AuthApiService from '../../services/auth-api-service';
 export default class RegistrationForm extends React.Component {
     static defaultProps = {
         onRegistrationSuccess: () => {}
-    }
+    };
     
-    state = { error: null }
+    state = { error: null };
 
     handleSubmit = ev => {
         ev.preventDefault()
@@ -32,10 +32,10 @@ export default class RegistrationForm extends React.Component {
         .catch(res => 
             this.setState({error: res.error})    
         )
-    }
+    };
 
     render() {
-        const { error } = this.state
+        const { error } = this.state;
 
         return(
             <form className="register-form" onSubmit={this.handleSubmit}>
@@ -76,6 +76,6 @@ export default class RegistrationForm extends React.Component {
                     <button type='submit'>Next Step</button>
                 </div>
             </form>
-        )
-    }
+        );
+    };
 }

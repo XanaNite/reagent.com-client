@@ -10,13 +10,13 @@ export default class LoginPage extends React.Component{
         history: {
           push: () => {},
         },
-      }
+      };
     
     handleLoginSuccess = () => {
-        const { location, history } = this.props
-        const destination = (location.state || {}).from || '/dashboard'
-        history.push(destination)
-    }
+        const { location, history } = this.props;
+        const destination = (location.state || {}).from || '/dashboard';
+        history.push(destination);
+    };
 
     render(){
         return(
@@ -38,6 +38,6 @@ export default class LoginPage extends React.Component{
                     </section>
                 </div>
             </main>
-        )
-    }
+        );
+    };
 }

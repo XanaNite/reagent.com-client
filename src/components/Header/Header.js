@@ -1,6 +1,6 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import './Header.css'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import './Header.css';
 
 export default function Header(){
     return(
@@ -10,5 +10,5 @@ export default function Header(){
         </nav>
         <h1><Link to="/">REagent.com</Link></h1>
     </header>
-    )
+    );
 }

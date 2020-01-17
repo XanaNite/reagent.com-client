@@ -1,7 +1,7 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import './ProfileAboutMeSection.css'
-import {inputValue} from '../Utils/Utils'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import './ProfileAboutMeSection.css';
+import {inputValue} from '../Utils/Utils';
 
 export default function ProfileAboutMeSection(props){
     return (
@@ -60,5 +60,5 @@ export default function ProfileAboutMeSection(props){
                 </div>
             </div>
         </section>
-    )
+    );
 }

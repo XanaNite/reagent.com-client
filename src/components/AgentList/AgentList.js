@@ -19,5 +19,5 @@ export default function AgentList(props){
             </div>
             <p className='AgentListSlogan'>{inputSlogan(props.agent.slogan)}</p>
         </div>
-    )
+    );
 }

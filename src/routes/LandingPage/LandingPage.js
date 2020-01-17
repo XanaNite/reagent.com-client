@@ -1,33 +1,33 @@
-import React from 'react'
-import './LandingPage.css'
-import Header from '../../components/Header/Header'
-import AgentList from '../../components/AgentList/AgentList'
-import AgentListContext from '../../contexts/AgentListContext'
-import AgentApiService from '../../services/agents-api-service'
+import React from 'react';
+import './LandingPage.css';
+import Header from '../../components/Header/Header';
+import AgentList from '../../components/AgentList/AgentList';
+import AgentListContext from '../../contexts/AgentListContext';
+import AgentApiService from '../../services/agents-api-service';
 
 export default class LandingPage extends React.Component{
-    static contextType = AgentListContext
+    static contextType = AgentListContext;
     
     componentDidMount(){
-        this.context.clearError()
+        this.context.clearError();
         AgentApiService.getAgents()
             .then(this.context.setAgentList)
-            .catch(this.context.setError)
-    }
+            .catch(this.context.setError);
+    };
 
     renderAgents(){
-        const {agentList = []} = this.context
+        const {agentList = []} = this.context;
 
         return agentList.map(agent =>
             <AgentList
                 key={agent.id}
                 agent={agent}
             />
-        )
-    }
+        );
+    };
 
     render(){
-        const {error} = this.context
+        const {error} = this.context;
 
         return (
             <main className='LandingPage-main'>
@@ -50,5 +50,5 @@ export default class LandingPage extends React.Component{
                 </div>
             </main>
         );
-    }
+    };
 }

@@ -1,7 +1,7 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
-import './AgentImgSection.css'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import './AgentImgSection.css';
 
 export default function AgentImgSection(props){
     return (
@@ -19,5 +19,5 @@ export default function AgentImgSection(props){
                 </div>
             </div>
         </section>
-    )
+    );
 }

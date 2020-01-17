@@ -1,5 +1,5 @@
-import React from 'react'
-import './ListingPageImg.css'
+import React from 'react';
+import './ListingPageImg.css';
 
 export default function ListingPageImg(){
     return(
@@ -57,5 +57,5 @@ export default function ListingPageImg(){
                 </table>
             </div>
         </section>
-    )
+    );
 }

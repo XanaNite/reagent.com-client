@@ -6,16 +6,16 @@ import AuthApiService from '../../services/auth-api-service';
 export default class LoginForm extends React.Component {
     static defaultProps = {
         onLoginSuccess: () => {}
-    }
+    };
     
-    state = { error: null }
+    state = { error: null };
     
     handleSubmitJwtAuth = ev =>{
-        ev.preventDefault()
+        ev.preventDefault();
     
-        this.setState({error: null})
+        this.setState({error: null});
     
-        const {agent_email, password} = ev.target
+        const {agent_email, password} = ev.target;
     
         AuthApiService.postLogin({
             agent_email: agent_email.value,
@@ -30,13 +30,13 @@ export default class LoginForm extends React.Component {
             this.props.onLoginSuccess()
           }
           else {
-            this.setState({error: res.error})
+            this.setState({error: res.error});
           }
         })
         .catch(res => {
-            this.setState({error: res.error})
+            this.setState({error: res.error});
         })
-    }
+    };
 
     render(){
         const { error } = this.state
@@ -61,6 +61,6 @@ export default class LoginForm extends React.Component {
                     <button type='submit'>Log in</button>
                 </div>
             </form>
-        )
-    }
+        );
+    };
 }

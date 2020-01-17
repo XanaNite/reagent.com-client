@@ -22,8 +22,8 @@ export default class EditAboutMeForm extends React.Component {
             brokerage: '',
             slogan: '',
             bio: ''
-        }
-    }
+        },
+    };
 
     handleChange = e =>{
         this.setState({updatedFields: {
@@ -40,14 +40,14 @@ export default class EditAboutMeForm extends React.Component {
             brokerage: document.getElementById("newBrokerage").value,
             slogan: document.getElementById("newSlogan").value,
             bio: document.getElementById("newBio").value
-        }})
-    }
+        }});
+    };
 
     handleSubmit = ev => {
-        ev.preventDefault()
-        const agentId = localStorage.getItem('user_id')
+        ev.preventDefault();
+        const agentId = localStorage.getItem('user_id');
         const {updatedFields} = this.state;
-        console.log(updatedFields)
+
         AgentApiService.updateAgent(agentId, updatedFields)
             .then(() =>{
                 this.resetFields(updatedFields);
@@ -55,7 +55,7 @@ export default class EditAboutMeForm extends React.Component {
             })
             .catch(this.context.setError);
         
-    }
+    };
 
     resetFields = (newFields) => {
         this.setState({
@@ -72,8 +72,8 @@ export default class EditAboutMeForm extends React.Component {
             brokerage: newFields.brokerage || '',
             slogan: newFields.slogan || '',
             bio: newFields.bio || '',
-        })
-    }
+        });
+    };
 
     render(){
         const {error} =this.state;
@@ -225,6 +225,6 @@ export default class EditAboutMeForm extends React.Component {
                     </div>
                 </form>
             </div>
-        )
-    }
+        );
+    };
 }

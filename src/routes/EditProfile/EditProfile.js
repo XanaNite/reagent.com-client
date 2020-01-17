@@ -16,7 +16,7 @@ export default class EditProfile extends React.Component{
         AgentApiService.getAgent(agentId)
             .then(this.context.setAgent)
             .catch(this.context.setError);
-    }
+    };
 
     render(){
         const {agent} = this.context;
@@ -28,6 +28,6 @@ export default class EditProfile extends React.Component{
                     <EditAboutMeForm agent={agent} />
                 </section>
             </main>
-        )
-    }
+        );
+    };
 }

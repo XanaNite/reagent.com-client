@@ -1,8 +1,8 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
-import './ProfileImgSection.css'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import './ProfileImgSection.css';
 
 export default function ProfileImgSection(props){
     return(
@@ -17,5 +17,5 @@ export default function ProfileImgSection(props){
                 </div>
             </div>
         </section>
-    )
+    );
 }

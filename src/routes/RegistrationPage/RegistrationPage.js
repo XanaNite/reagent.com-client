@@ -1,8 +1,8 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import './RegistrationPage.css'
-import RegistrationHeader from '../../components/RegistrationHeader/RegistrationHeader'
-import RegistrationForm from '../../components/RegistrationForm/RegistrationForm'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import './RegistrationPage.css';
+import RegistrationHeader from '../../components/RegistrationHeader/RegistrationHeader';
+import RegistrationForm from '../../components/RegistrationForm/RegistrationForm';
 
 export default class RegistrationPage extends React.Component{
     static defaultProps = {
@@ -10,13 +10,13 @@ export default class RegistrationPage extends React.Component{
         history: {
             push: () => {},
         },
-    }
+    };
 
     handleRegistrationSuccess = agent => {
-        const { location, history } = this.props
-        const destination = (location.state || {}).from || '/dashboard'
-        history.push(destination)
-    }
+        const { location, history } = this.props;
+        const destination = (location.state || {}).from || '/dashboard';
+        history.push(destination);
+    };
 
     render(){
         return(
@@ -33,6 +33,6 @@ export default class RegistrationPage extends React.Component{
                     </section>
                 </div>
             </main>
-        )
-    }
+        );
+    };
 }

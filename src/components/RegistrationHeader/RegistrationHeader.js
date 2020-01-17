@@ -1,6 +1,6 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import './RegistrationHeader.css'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import './RegistrationHeader.css';
 
 export default function RegistrationHeader(){
     return(
@@ -13,5 +13,5 @@ export default function RegistrationHeader(){
                 <span>for Professionals</span>
             </div>
         </header>
-    )
+    );
 }
