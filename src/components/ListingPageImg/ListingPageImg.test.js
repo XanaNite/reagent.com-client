@@ -18,7 +18,8 @@ describe(`ListingPageImg component`, () => {
     };
 
     it('renders the ListingPageImg given props', () => {
-        const wrapper = shallow(<ListingPageImg {...props} />)
-        expect(toJson(wrapper)).toMatchSnapshot()
+        const wrapper = shallow(<ListingPageImg {...props} />);
+
+        expect(toJson(wrapper)).toMatchSnapshot();
     });
 })

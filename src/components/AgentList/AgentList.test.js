@@ -18,7 +18,8 @@ describe(`AgentList component`, () => {
     };
 
     it('renders the AgentList given props', () => {
-        const wrapper = shallow(<AgentList {...props} />)
-        expect(toJson(wrapper)).toMatchSnapshot()
+        const wrapper = shallow(<AgentList {...props} />);
+
+        expect(toJson(wrapper)).toMatchSnapshot();
     });
 })

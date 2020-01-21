@@ -18,7 +18,8 @@ describe(`Header component`, () => {
     };
 
     it('renders the Header given props', () => {
-        const wrapper = shallow(<Header {...props} />)
-        expect(toJson(wrapper)).toMatchSnapshot()
+        const wrapper = shallow(<Header {...props} />);
+
+        expect(toJson(wrapper)).toMatchSnapshot();
     });
 })

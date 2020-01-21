@@ -18,7 +18,8 @@ describe(`ProfileAboutMeSection component`, () => {
     };
 
     it('renders the ProfileAboutMeSection given props', () => {
-        const wrapper = shallow(<ProfileAboutMeSection {...props} />)
-        expect(toJson(wrapper)).toMatchSnapshot()
+        const wrapper = shallow(<ProfileAboutMeSection {...props} />);
+
+        expect(toJson(wrapper)).toMatchSnapshot();
     });
 })

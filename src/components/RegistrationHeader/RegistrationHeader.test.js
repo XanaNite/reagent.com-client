@@ -18,7 +18,8 @@ describe(`RegistrationHeader component`, () => {
     };
 
     it('renders the RegistrationHeader given props', () => {
-        const wrapper = shallow(<RegistrationHeader {...props} />)
-        expect(toJson(wrapper)).toMatchSnapshot()
+        const wrapper = shallow(<RegistrationHeader {...props} />);
+
+        expect(toJson(wrapper)).toMatchSnapshot();
     });
 })

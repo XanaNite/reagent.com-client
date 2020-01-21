@@ -18,7 +18,8 @@ describe(`DashboardHeader component`, () => {
     };
 
     it('renders the DashboardHeader given props', () => {
-        const wrapper = shallow(<DashboardHeader {...props} />)
-        expect(toJson(wrapper)).toMatchSnapshot()
+        const wrapper = shallow(<DashboardHeader {...props} />);
+
+        expect(toJson(wrapper)).toMatchSnapshot();
     });
 })

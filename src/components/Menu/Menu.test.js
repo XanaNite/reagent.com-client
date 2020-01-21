@@ -11,12 +11,14 @@ describe(`Menu component`, () => {
   };
 
   it('renders Menu by default', () => {
-    const wrapper = shallow(<Menu />)
-    expect(toJson(wrapper)).toMatchSnapshot()
+    const wrapper = shallow(<Menu />);
+
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 
   it('renders the Menu given props', () => {
-    const wrapper = shallow(<Menu {...props} />)
-    expect(toJson(wrapper)).toMatchSnapshot()
+    const wrapper = shallow(<Menu {...props} />);
+
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 })

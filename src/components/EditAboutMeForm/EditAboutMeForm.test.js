@@ -18,7 +18,8 @@ describe(`EditAboutMeForm component`, () => {
     };
 
     it('renders the EditAboutMeForm given props', () => {
-        const wrapper = shallow(<EditAboutMeForm {...props} />)
-        expect(toJson(wrapper)).toMatchSnapshot()
+        const wrapper = shallow(<EditAboutMeForm {...props} />);
+
+        expect(toJson(wrapper)).toMatchSnapshot();
     });
 })

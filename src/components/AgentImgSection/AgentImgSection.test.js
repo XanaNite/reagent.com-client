@@ -18,7 +18,8 @@ describe(`AgentImgSection component`, () => {
     };
 
     it('renders the AgentList given props', () => {
-        const wrapper = shallow(<AgentImgSection {...props} />)
-        expect(toJson(wrapper)).toMatchSnapshot()
+        const wrapper = shallow(<AgentImgSection {...props} />);
+
+        expect(toJson(wrapper)).toMatchSnapshot();
     });
 })

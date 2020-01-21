@@ -11,12 +11,14 @@ describe(`HamburgerMenu component`, () => {
   };
 
   it('renders a form.HamburgerMenu by default', () => {
-    const wrapper = shallow(<HamburgerMenu />)
-    expect(toJson(wrapper)).toMatchSnapshot()
+    const wrapper = shallow(<HamburgerMenu />);
+
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 
   it('renders the HamburgerMenu given props', () => {
-    const wrapper = shallow(<HamburgerMenu {...props} />)
-    expect(toJson(wrapper)).toMatchSnapshot()
+    const wrapper = shallow(<HamburgerMenu {...props} />);
+
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 })

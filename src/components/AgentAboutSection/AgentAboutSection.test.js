@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import AgentAboutSection from './AgentAboutSection'
+import AgentAboutSection from './AgentAboutSection';
 
 describe(`AgentAboutSection component`, () => {
   const props = {
@@ -18,7 +18,8 @@ describe(`AgentAboutSection component`, () => {
   };
 
   it('renders AgentAboutSection given props', () => {
-    const wrapper = shallow(<AgentAboutSection {...props} />)
-    expect(toJson(wrapper)).toMatchSnapshot()
+    const wrapper = shallow(<AgentAboutSection {...props} />);
+
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 })

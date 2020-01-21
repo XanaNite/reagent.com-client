@@ -18,7 +18,8 @@ describe(`LoginHeader component`, () => {
     };
 
     it('renders the LoginHeader given props', () => {
-        const wrapper = shallow(<LoginHeader {...props} />)
-        expect(toJson(wrapper)).toMatchSnapshot()
+        const wrapper = shallow(<LoginHeader {...props} />);
+
+        expect(toJson(wrapper)).toMatchSnapshot();
     });
 })

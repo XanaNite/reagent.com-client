@@ -14,7 +14,7 @@ export default class AgentDashboard extends React.Component{
         this.context.clearError();
         AgentApiService.getAgent(agentId)
             .then(this.context.setAgent)
-            .catch(this.context.setError)
+            .catch(this.context.setError);
     };
 
     render(){

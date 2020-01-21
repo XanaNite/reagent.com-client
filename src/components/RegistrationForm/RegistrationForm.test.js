@@ -18,7 +18,8 @@ describe(`RegistrationForm component`, () => {
     };
 
     it('renders the RegistrationForm given props', () => {
-        const wrapper = shallow(<RegistrationForm {...props} />)
-        expect(toJson(wrapper)).toMatchSnapshot()
+        const wrapper = shallow(<RegistrationForm {...props} />);
+
+        expect(toJson(wrapper)).toMatchSnapshot();
     });
 })

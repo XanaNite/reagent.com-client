@@ -18,7 +18,8 @@ describe(`DashboardAgentProfile component`, () => {
     };
 
     it('renders the DashboardAgentProfile given props', () => {
-        const wrapper = shallow(<DashboardAgentProfile {...props} />)
-        expect(toJson(wrapper)).toMatchSnapshot()
+        const wrapper = shallow(<DashboardAgentProfile {...props} />);
+
+        expect(toJson(wrapper)).toMatchSnapshot();
     });
 })

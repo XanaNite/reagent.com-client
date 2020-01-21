@@ -18,7 +18,8 @@ describe(`EditProfileHeader component`, () => {
     };
 
     it('renders the EditProfileHeader given props', () => {
-        const wrapper = shallow(<EditProfileHeader {...props} />)
-        expect(toJson(wrapper)).toMatchSnapshot()
+        const wrapper = shallow(<EditProfileHeader {...props} />);
+
+        expect(toJson(wrapper)).toMatchSnapshot();
     });
 })

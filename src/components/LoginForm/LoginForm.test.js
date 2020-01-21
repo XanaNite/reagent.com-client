@@ -18,7 +18,8 @@ describe(`LoginForm component`, () => {
     };
 
     it('renders the LoginForm given props', () => {
-        const wrapper = shallow(<LoginForm {...props} />)
-        expect(toJson(wrapper)).toMatchSnapshot()
+        const wrapper = shallow(<LoginForm {...props} />);
+
+        expect(toJson(wrapper)).toMatchSnapshot();
     });
 })
